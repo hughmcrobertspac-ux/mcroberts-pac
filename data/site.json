@@ -6,6 +6,10 @@
   "pacEmail": "hughmcrobertspac@gmail.com",
   "baseUrl": "https://mcroberts.richmond-dpac.ca/",
   "domain": "mcroberts.richmond-dpac.ca",
+  "emailList": {
+    "subscribe": "mcroberts-pac-news+subscribe@googlegroups.com",
+    "unsubscribe": "mcroberts-pac-news+unsubscribe@googlegroups.com"
+  },
   "schoolYear": "2026–27",
 
   "school": {

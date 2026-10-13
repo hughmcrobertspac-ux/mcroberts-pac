@@ -15,14 +15,13 @@
 
     <h2 id="join">How to join</h2>
     <ol class="steps">
-      <li><div><h3>Tap the button</h3><p>Your email app opens a new message to the PAC, with the subject already filled in.</p></div></li>
-      <li><div><h3>Send it</h3><p>You do not need to write anything else. If you like, add your name and the language you read best.</p></div></li>
-      <li><div><h3>You are on the list</h3><p><x-tbc tip="The executive still has to agree to start a PAC email list and decide who looks after it">A PAC volunteer adds your address, and you get the next PAC email.</x-tbc></p></div></li>
+      <li><div><h3>Tap the button</h3><p>Your email app opens a new message to the PAC email list. The address and subject are already filled in.</p></div></li>
+      <li><div><h3>Send it, then confirm once</h3><p>You do not need to write anything else. You will get one confirmation email; reply to it (or tap its confirm link) to prove the address is yours.</p></div></li>
+      <li><div><h3>You are on the list</h3><p><x-tbc tip="The executive still has to create the PAC email list in Google Groups with the address in the button below; sign-ups start working the moment it exists">The list adds your address by itself. No volunteer types it in, and you get the next PAC email.</x-tbc></p></div></li>
     </ol>
-    <div class="btn-row"><a class="btn btn--action" href="mailto:{{site.pacEmail}}?subject=Add%20me%20to%20the%20PAC%20email%20list">Add me to the PAC email list</a></div>
-    <p class="copyline small"><span>No email app on this device? Write from your usual email to</span> <a class="mono" href="mailto:{{site.pacEmail}}">{{site.pacEmail}}</a> <button class="copy-btn" type="button" data-copy="{{site.pacEmail}}">Copy address</button></p>
+    <div class="btn-row"><a class="btn btn--action" href="mailto:{{site.emailList.subscribe}}?subject=Subscribe">Join the PAC email list</a></div>
+    <p class="copyline small"><span>No email app on this device? Write from your usual email to</span> <a class="mono" href="mailto:{{site.emailList.subscribe}}">{{site.emailList.subscribe}}</a> <button class="copy-btn" type="button" data-copy="{{site.emailList.subscribe}}">Copy address</button></p>
     <p>The PAC only needs your email address. It does not need your child's name or grade.</p>
-    <p class="small muted"><x-tbc tip="Planned for launch; the executive still has to choose the tool">Later, this page will have a simple sign-up form. You will confirm your address by email.</x-tbc></p>
 
     <h2 id="what">What we send</h2>
     <p><x-tbc tip="The executive still has to decide what PAC emails include and how often they go out">PAC emails will cover meeting reminders, fundraisers, volunteer jobs and short updates after meetings. Expect about one or two emails a month during the school year.</x-tbc></p>
@@ -30,8 +29,8 @@
     <p>Your email address is used only for PAC news. The PAC never sells it or shares it. Read the <a href="{{root}}privacy/">privacy notice</a>.</p>
 
     <h2 id="stop">Stop at any time</h2>
-    <p>Changed your mind? Send an email with the subject "Remove me from the PAC email list". We will take you off the list. You do not need to give a reason.</p>
-    <div class="btn-row"><a class="btn btn--outline" href="mailto:{{site.pacEmail}}?subject=Remove%20me%20from%20the%20PAC%20email%20list">Remove me from the list</a></div>
+    <p>Changed your mind? Send an email to the list's leave address and confirm once, and you are off the list. No volunteer needed, and you do not need to give a reason.</p>
+    <div class="btn-row"><a class="btn btn--outline" href="mailto:{{site.emailList.unsubscribe}}?subject=Unsubscribe">Remove me from the list</a></div>
 
     <h2 id="striker">The Striker Weekly</h2>
     <p>The school's weekly email to families is called the Striker Weekly. It carries PAC notices too. The principal also sends PAC meeting invitations to families by email.</p>
