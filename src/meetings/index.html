@@ -1,0 +1,83 @@
+<!--{"title": "Meetings", "description": "PAC meeting dates for {{site.schoolYear}}, what happens at a meeting, how to join online, elections, and where to find agendas and approved minutes.", "out": "meetings/index.html", "nav": "meetings"}-->
+<section class="band page-head" aria-labelledby="page-h">
+  <div class="wrap hero__grid">
+    <div>
+      <p class="eyebrow">Meetings {{site.schoolYear}}</p>
+      <h1 id="page-h">Come to a PAC meeting</h1>
+      <p class="lead">Every parent and guardian is welcome. Come to the {{meeting_place}} at McRoberts, or join online from home.</p>
+      <div class="in-short"><span class="in-short__tag">In short</span><p>The PAC meets about seven times a year. Meetings start at {{meeting_time}} and take about one hour. You do not need to sign up, and you do not have to speak.</p></div>
+    </div>
+    {{block:next_meeting}}
+  </div>
+</section>
+
+<div class="wrap section layout layout--rail">
+  <div class="prose">
+    <h2 id="dates">{{site.schoolYear}} meeting dates</h2>
+    <p>Meetings are on the dates below. They start at {{meeting_time}} in the {{meeting_place}} at McRoberts. You can also join online.</p>
+    {{block:meetings_table}}
+    <p><x-tbc tip="The dates come from the school calendar and still have to be confirmed by the PAC executive">There are no PAC meetings in December, March or June.</x-tbc></p>
+    <p>Want to join online? <a href="mailto:{{site.pacEmail}}?subject=Online%20link%20for%20the%20PAC%20meeting">Email the PAC for the link</a>.</p>
+
+    <h2 id="first-time">First time? What to expect</h2>
+    <div class="callout callout--gold">
+      <p><strong>You can just listen.</strong> You do not have to speak, and you do not have to come to every meeting. Come when you can.</p>
+    </div>
+    <p>A meeting takes about one hour. There is a written agenda, and the Chair leads the meeting. Most meetings follow these steps:</p>
+    <ol class="steps">
+      <li><div><h3>Welcome</h3><p>The Chair opens the meeting and welcomes everyone.</p></div></li>
+      <li><div><h3>Agenda and last minutes</h3><p>Parents approve the agenda and the minutes of the last meeting.</p></div></li>
+      <li><div><h3>Principal's report</h3><p>The principal talks about what is happening at school and answers questions.</p></div></li>
+      <li><div><h3>Reports</h3><p>The Treasurer, Secretary, Dry After Grad committee, Fundraising team and RDPA Representative give short updates.</p></div></li>
+      <li><div><h3>Business and votes</h3><p>Parents talk about PAC plans and vote on things like spending. Only parents and guardians vote.</p></div></li>
+      <li><div><h3>Questions and next meeting</h3><p>Time for your questions and ideas, then the date of the next meeting.</p></div></li>
+    </ol>
+    <p>Sometimes a guest speaker comes too. In 2025–26, the school librarians and Canadian Parents for French spoke at PAC meetings. The September meeting also includes the elections.</p>
+
+    <h3>Coming in person</h3>
+    <p>Meetings are in the {{site.meetingDefaults.place}} at Hugh McRoberts Secondary, {{site.meetingDefaults.address}}.</p>
+
+    <h3>Joining online</h3>
+    <p>Meetings are also on {{site.meetingDefaults.online}}. Email <a href="mailto:{{site.pacEmail}}?subject=Online%20link%20for%20the%20PAC%20meeting">{{site.pacEmail}}</a> and ask for the link.</p>
+
+    <h3>Language</h3>
+    <p><x-tbc tip="The executive still has to confirm the meeting language and whether language help can be arranged">Meetings are in English. If you would like help in another language, email the PAC before the meeting to ask.</x-tbc></p>
+
+    <h2 id="decisions">How decisions are made</h2>
+    <ul>
+      <li>Only parents and guardians of McRoberts students vote. School staff and community members are welcome, but they do not vote.</li>
+      <li>To make decisions, a meeting needs a quorum: at least two-thirds of the executive and at least five members.</li>
+      <li>PAC spending is voted on at meetings.</li>
+      <li>Meetings follow Robert's Rules of Order, a common set of rules for running fair meetings.</li>
+      <li>The PAC can also hold a special meeting. The principal and parents get seven days' notice, except when the matter is urgent.</li>
+    </ul>
+
+    <h2 id="elections">Elections every September</h2>
+    <p>The executive is elected every year at the first meeting of the school year, in September. The previous Chair, or the principal, runs the election. The 2026–27 executive was elected on <time datetime="2026-09-16">September 16, 2026</time>.</p>
+    <p>Would you like to join the executive next year? Talk to the PAC any time before September.</p>
+    <div class="btn-row">
+      <a class="btn btn--outline btn--sm" href="{{root}}about/#executive">Meet the executive</a>
+      <a class="btn btn--outline btn--sm" href="{{root}}volunteer/">Other ways to help</a>
+    </div>
+
+    <h2 id="minutes">Agendas and minutes</h2>
+    <p>The agenda is shared with families before each meeting. The Secretary writes the minutes. Parents approve them by vote at the next meeting, and only approved minutes are shared.</p>
+    <p>For now, past agendas and approved minutes are on the school website:</p>
+    <ul class="linklist" role="list">
+      <li><a href="{{site.schoolPac.minutes}}" rel="noopener">Approved PAC minutes<span class="ext" aria-hidden="true">↗</span></a><span class="small muted">From September 2023 to May 2026, on the school website</span></li>
+      <li><a href="{{site.schoolPac.agendas}}" rel="noopener">PAC meeting agendas<span class="ext" aria-hidden="true">↗</span></a><span class="small muted">From 2023 to April 2026, on the school website</span></li>
+    </ul>
+    <p><x-tbc tip="Proposed for the executive: keep PAC-owned, view-only copies before school websites stop hosting PAC files at the end of 2026">The PAC plans to keep its own copies of approved minutes on this site.</x-tbc></p>
+    <p>The minutes of the <time datetime="2026-09-16">September 16, 2026</time> meeting will be shared after parents approve them at the next meeting.</p>
+  </div>
+  <nav class="rail" aria-label="On this page">
+    <p class="eyebrow">On this page</p>
+    <ul role="list">
+      <li><a href="#dates">Meeting dates</a></li>
+      <li><a href="#first-time">What to expect</a></li>
+      <li><a href="#decisions">How decisions are made</a></li>
+      <li><a href="#elections">Elections</a></li>
+      <li><a href="#minutes">Agendas and minutes</a></li>
+    </ul>
+  </nav>
+</div>

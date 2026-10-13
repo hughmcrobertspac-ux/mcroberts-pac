@@ -1,0 +1,212 @@
+<!--{"title": "2025–26 financial report", "description": "Where McRoberts PAC money came from and where it went in 2025–26: the gaming grant, the Teachers' Wish List and family fundraising. A draft.", "out": "money/2025-26-report/index.html", "nav": "money", "bodyClass": "report", "css": ["report.css"]}-->
+<div class="draft-strip" id="top">
+  <div class="wrap draft-strip__inner">
+    <p><strong>Draft for review.</strong> <span id="pendCount"></span> <span class="hide-note">Hiding the sources only changes this view: every source stays in the page and in data.js.</span></p>
+    <div class="draft-strip__tools">
+      <a class="btn btn--outline btn--sm" href="2025-26-financial-report-draft.pdf">PDF version</a>
+      <button class="switch" id="reviewBtn" aria-pressed="false" type="button"><i aria-hidden="true"></i>Show sources</button>
+    </div>
+  </div>
+</div>
+
+<section class="band page-head report-hero" aria-labelledby="page-h">
+  <div class="wrap">
+    <p class="eyebrow"><a href="../">Where the money goes</a> <span aria-hidden="true">/</span> <span id="heroEyebrow"></span></p>
+    <h1 id="page-h">Where the money <span class="gold">went.</span></h1>
+    <p class="lead">A simple report on the money your Parent Advisory Council (PAC) raised, received and spent for Hugh McRoberts Secondary students in the 2025–26 school year.</p>
+    <div class="in-short"><span class="in-short__tag">In short</span><p>Most PAC money came from the Province's gaming grant. It paid for clubs, teams, trips and grad night. Money from families paid for scholarships and for thanking staff.</p></div>
+    <div class="r-board" id="board"></div>
+    <div class="coverage" id="coverage"></div>
+    <nav class="jump" aria-label="Sections of the report">
+      <ul role="list">
+        <li><a href="#follow">Follow the money</a></li>
+        <li><a href="#money">How it works</a></li>
+        <li><a href="#gaming">Grant</a></li>
+        <li><a href="#wishlist">Wish list</a></li>
+        <li><a href="#family">Family fund</a></li>
+        <li><a href="#dag">Dry After Grad</a></li>
+        <li><a href="#care">Checks</a></li>
+        <li><a href="#give">Give</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+<section class="scrolly" id="follow" aria-labelledby="follow-h">
+  <div class="wrap scrolly-head">
+    <div class="section-head"><p class="eyebrow">Follow the money</p><h2 id="follow-h">From <span data-fmt="rate"></span> a student to a year of activities</h2><p class="lead">Scroll to follow the money. Each square is $100.</p></div>
+  </div>
+  <div class="progress"><i id="scrollyProgress"></i></div>
+  <div class="wrap scrolly-body">
+    <div class="stage" id="stage"><canvas aria-hidden="true"></canvas><div class="stage-labels"></div></div>
+    <div class="r-steps">
+      <div class="step on" data-scene="students"><span class="n">1 of 8</span><h3>It starts with every student</h3><p>Each year the Province of BC gives every parent council <span data-fmt="rate"></span> for each student at the school.</p></div>
+      <div class="step" data-scene="grant"><span class="n">2 of 8</span><h3><span data-fmt="rate"></span> each adds up to <span data-fmt="grant"></span></h3><p>The BC Community Gaming Grant came to our gaming account in October 2025. The Province pays for these grants from its gambling income, which is why they are called "gaming" grants.</p><p>It pays for extras outside regular classes: clubs, teams, trips, events and student activities.</p></div>
+      <div class="step" data-scene="asks"><span class="n">3 of 8</span><h3>School groups asked for <span data-fmt="requested"></span></h3><p>Sixteen requests came from ten school groups: dance instructors, math contests, a Grade 10 trip to Victoria, a library reading challenge and more.</p></div>
+      <div class="step" data-scene="approved"><span class="n">4 of 8</span><h3>The PAC approved <span data-fmt="approved"></span></h3><p>At the November 12 meeting, the PAC approved the wish list (the vote is still to be confirmed in the minutes). As in past years, the school bought the items and the PAC paid the school back from the gaming account.</p></div>
+      <div class="step" data-scene="paid"><span class="n">5 of 8</span><h3>In August, the school was paid back <span data-fmt="paid"></span></h3><p>One cheque from the gaming account, cashed in August 2026: <span data-fmt="wishPart"></span> for the 2025&#8288;–&#8288;26 wish list and <span data-fmt="dag"></span> for the Dry After Grad bus. The school's request to be paid back will show the amount for each wish-list item.</p><p>The 2025&#8288;–&#8288;26 grant was <span data-fmt="grant"></span>. Interest and money from earlier years cover the difference.</p></div>
+      <div class="step" data-scene="family"><span class="n">6 of 8</span><h3>About <span data-fmt="family"></span> came into the family fund</h3><p>Over the year: samosas, Purdys chocolates, bubble tea, donations for the staff thank-you breakfast and a few other deposits. The Province sets no rules on how this money is spent.</p></div>
+      <div class="step" data-scene="scholarSet"><span class="n">7 of 8</span><h3>Families paid for this year's scholarships</h3><p>The grant cannot pay for scholarships. In June 2026 <span data-fmt="scholarCount"></span> graduating students each got a <span data-fmt="scholarRate"></span> scholarship, <span data-fmt="scholarTotal"></span> in all.</p><p>The family fund paid the school <span data-fmt="scholarPaid"></span>, from money families raised this year and in earlier years. One parent gave the other <span data-fmt="scholarParent"></span> to the school directly.</p></div>
+      <div class="step" data-scene="scholarGoal"><span class="n">8 of 8</span><h3>In 2026–27, we want five</h3><p>Five <span data-fmt="scholarRate"></span> scholarships cost <span data-fmt="scholarGoal"></span>, <span data-fmt="scholarGap"></span> more than the scholarships of 2025–26.</p><div class="btn-row"><a class="btn btn--action btn--sm" href="#give">Help fill the squares</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section r-sec" aria-labelledby="letter-h">
+  <div class="wrap letter">
+    <div>
+      <h2 id="letter-h" class="eyebrow">About this report</h2>
+      <p>Dear McRoberts families and staff,</p>
+      <p>This report shows where PAC money came from and where it went in the 2025–26 school year. Most of it came from the BC Community Gaming Grant. The Province gives <span data-fmt="rate"></span> for each student every year, for activities outside regular classes. The grant cannot pay for scholarships or for thanking our staff. Those depend on you, through fundraisers and donations.</p>
+      <p>Thank you to every family who ordered samosas, chocolates and bubble tea or gave toward the staff breakfast, to the volunteers who ran each sale, and to last year's executive and treasurers, whose records made this report possible. This report's figures for the gaming account and the family fund are checked against the PAC's bank record for the whole year.</p>
+    </div>
+    <div class="sign" id="signers"></div>
+  </div>
+</section>
+
+<section class="section r-sec" aria-labelledby="year-h">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">The school year</p><h2 id="year-h">2025–26 at a glance</h2></div>
+    <div class="fixtures" id="fixtures"></div>
+    <div class="fx-legend">
+      <span><i class="gaming-c"></i>Gaming account</span>
+      <span><i class="operating-c"></i>Family fund</span>
+      <span><i class="decision-c"></i>PAC decision</span>
+      <span><i class="event-c"></i>Event</span>
+      <span><i class="meeting-c"></i>Meeting</span>
+    </div>
+  </div>
+</section>
+
+<section class="section r-sec" id="money" aria-labelledby="money-h">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">How PAC money works</p><h2 id="money-h">Two accounts, two jobs</h2><p class="lead">The PAC keeps two bank accounts at Coast Capital Savings. Each one has its own source of money and its own rules. This report covers both for the whole school year. Dry After Grad has its own committee and its own account; the PAC supports it from the gaming account.</p></div>
+    <div class="map" id="map"></div>
+    <div class="callout callout--gold rule-note"><p><strong>The grant has limits.</strong> Provincial rules do not allow gaming money to pay for scholarships, staff lunches or anything the school must provide for classes. That is why the family fund matters: it pays for the things the grant cannot.</p></div>
+  </div>
+</section>
+
+<section class="section r-sec" id="gaming" aria-labelledby="gaming-h">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Gaming account</p><h2 id="gaming-h">The BC grant, month by month</h2><p class="lead">The balance fell in September 2025 when the 2024–25 wish-list cheque was cashed, then rose in October when the new grant arrived. It earned interest until August 2026, when the PAC paid the school back for the 2025–26 wish list and the Dry After Grad bus, and ended the year at <span data-fmt="gamingClosing"></span>.</p></div>
+    <div class="two">
+      <div class="panel">
+        <div class="chart-head"><h3>Balance at the end of each month</h3>
+          <div class="legend"><span><i class="solidi gaming-c"></i>From the bank record</span></div>
+        </div>
+        <div id="gamingChart"></div>
+        <ol class="callouts"><li><b>1</b><span><strong>September.</strong> The 2024–25 wish-list cheque was cashed: −<span data-fmt="chequeAmt"></span></span></li><li><b>2</b><span><strong>October.</strong> The BC gaming grant arrived: +<span data-fmt="grant2"></span></span></li><li><b>3</b><span><strong>August.</strong> The 2025–26 wish-list cheque was cashed: −<span data-fmt="wishChequeAmt"></span>. It paid <span data-fmt="wishPart2"></span> for the wish list and <span data-fmt="dag2"></span> for the Dry After Grad bus.</span></li></ol>
+        <div class="commit">
+          <div class="chart-head"><h3>Where the year's gaming money went</h3><span class="num asof" id="commitAsOf"></span></div>
+          <svg class="defs-only" width="0" height="0" aria-hidden="true"><defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6"/><line x1="0" y1="0" x2="0" y2="6" stroke-width="1.5"/></pattern></defs></svg>
+          <div id="commitBar"></div>
+          <div class="commit-legend" id="commitLegend"></div>
+          <p class="hint mt12" id="commitNote"></p>
+        </div>
+      </div>
+      <div>
+        <table class="stmt" id="gamingStmt"></table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section r-sec" id="wishlist" aria-labelledby="wish-h">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">The wish list</p><h2 id="wish-h">What school groups asked for</h2><p class="lead">Each fall, teachers and clubs send the PAC their requests. In November the PAC approved <span data-fmt="approved2"></span> (the vote is still to be confirmed in the minutes). The school bought the items, and in August 2026 one cheque paid the school back <span data-fmt="wishPart2"></span> for the wish list and <span data-fmt="dag2"></span> for the Dry After Grad bus. Tap or select a group to see what it asked for.</p></div>
+    <div class="wish-top" id="wishTop"></div>
+    <div class="two">
+      <div class="panel"><div class="chart-head"><h3>Asked for, by school group</h3><span class="hint">Tap or select a group</span></div><div id="wishChart"></div></div>
+      <div class="panel dept" id="deptPanel" aria-live="polite"></div>
+    </div>
+    <p class="hint mt16" id="wishNote"></p>
+  </div>
+</section>
+
+<section class="section r-sec" id="family" aria-labelledby="family-h">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Family fund</p><h2 id="family-h">What families made possible</h2><p class="lead">The family fund is the PAC's operating account. Almost all of its money comes from McRoberts families, and it pays for what the grant cannot: scholarships for graduates and thank-yous to our staff.</p></div>
+    <div class="fr-grid" id="raisedCards"></div>
+    <div class="raised-total" id="raisedTotal"></div>
+    <div class="two mt44">
+      <div class="panel"><div class="chart-head"><h3>Balance at the end of each month</h3><div class="legend"><span><i class="solidi operating-c"></i>From the bank record</span></div></div><div id="opChart"></div><p class="hint" id="opHint"></p></div>
+      <div><h3 class="mb8">Money in and out</h3><div class="spend-list" id="spendList"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section r-sec" id="dag" aria-labelledby="dag-h">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Dry After Grad</p><h2 id="dag-h">A safe night for the Class of 2026</h2></div>
+    <div class="dag-band" id="dagBand"></div>
+  </div>
+</section>
+
+<section class="section r-sec" id="history" aria-labelledby="hist-h">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">The longer view</p><h2 id="hist-h">Seven years of the grant</h2><p class="lead" id="histLede"></p></div>
+    <div class="panel">
+      <div class="chart-head"><h3>Grant received and spent, by grant year (February to January)</h3><div class="legend"><span><i class="gaming-c"></i>Grant received</span><span><i class="spent-c"></i>Spent on students</span></div></div>
+      <div id="histChart"></div>
+      <p class="hint" id="histNote"></p>
+    </div>
+  </div>
+</section>
+
+<section class="section r-sec" id="care" aria-labelledby="care-h">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Keeping money safe</p><h2 id="care-h">How we look after the money</h2></div>
+    <div class="two">
+      <div><ul class="ctrl" id="controls"></ul><div class="meet-dots" id="meetings"></div></div>
+      <div><h3 class="mb14">What we will propose for 2026–27</h3><div class="next" id="nextYear"></div></div>
+    </div>
+    <div class="rv panel" id="reviewList"><h3 class="mb12">Waiting on documents</h3><ol id="reviewItems"></ol></div>
+  </div>
+</section>
+
+<section class="band give" id="give" aria-labelledby="give-h">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--gold">Join the team</p>
+    <h2 id="give-h">Help us fund 2026–27.</h2>
+    <div class="why" id="why"></div>
+    <div class="give-grid">
+      <div>
+        <p class="eyebrow mb12" id="goalsLabel"></p>
+        <div class="goal" id="goals"></div>
+        <div class="fill">
+          <p class="eyebrow">Fill the squares</p>
+          <div class="ctl">
+            <label for="famRange">Families who give<b id="famVal">50</b></label>
+            <input type="range" id="famRange" min="5" max="300" step="5" value="50">
+            <label for="giftRange">Average gift<b id="giftVal">$50</b></label>
+            <input type="range" id="giftRange" min="10" max="200" step="5" value="50">
+          </div>
+          <div class="fillgrid" id="fillGrid" aria-hidden="true"></div>
+          <div class="fillkey"><span><i class="gold-c"></i>Scholarships, <span data-fmt="scholarGoal"></span></span><span><i class="chalk-c"></i>Staff thank-yous, <span data-fmt="staffGoal"></span></span></div>
+          <p class="fillout" id="fillOut" aria-live="polite"></p>
+        </div>
+        <div class="other"><p class="eyebrow">Other ways to help</p><ul id="otherWays"></ul></div>
+      </div>
+      <div class="chooser">
+        <h3>Choose an amount</h3>
+        <div class="amts" id="amts" role="group" aria-label="Donation amount"></div>
+        <p class="impact" id="impact" aria-live="polite"></p>
+        <div class="how">
+          <span class="lbl">How to give</span>
+          <div class="copyrow"><code id="etr"></code><button class="btn btn--action btn--sm" type="button" id="copyBtn">Copy address</button></div>
+          <p id="howText"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight r-sources" aria-label="About the figures">
+  <div class="wrap" id="foot"></div>
+</section>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="report.js"></script>
+<script src="scrolly.js" defer></script>
+<script src="give-explorer.js" defer></script>

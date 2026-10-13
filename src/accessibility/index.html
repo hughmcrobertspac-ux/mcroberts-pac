@@ -1,0 +1,72 @@
+<!--{"title": "Accessibility", "description": "The McRoberts PAC website aims to meet WCAG 2.2 AA. What we have done, what we still have to fix, and how to tell us about a barrier.", "out": "accessibility/index.html", "nav": ""}-->
+<section class="band page-head" aria-labelledby="page-h">
+  <div class="wrap">
+    <p class="eyebrow">Accessibility statement</p>
+    <h1 id="page-h">A website every family can use</h1>
+    <p class="lead">The PAC wants every McRoberts family to be able to read and use this site, on any device and in the way that works best for them.</p>
+    <div class="in-short"><span class="in-short__tag">In short</span><p>We aim to meet the WCAG 2.2 AA standard. Some parts are still being tested. If anything on the site is hard to use, email us and we will help.</p></div>
+  </div>
+</section>
+
+<div class="wrap section layout layout--rail">
+  <div class="prose">
+    <h2 id="goal">Our goal</h2>
+    <p>This site aims to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA. WCAG is the international standard for accessible websites. Level AA is the usual target for websites in Canada.</p>
+
+    <h2 id="done">What we have done</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Keyboard</h3>
+        <p>You can use the whole site with a keyboard. The first link on every page skips to the main content. A bright yellow outline shows where you are.</p>
+      </article>
+      <article class="card">
+        <h3>Contrast</h3>
+        <p>Text and background colours were chosen to meet WCAG 2.2 AA contrast, in both the light and the dark theme. Nothing depends on colour alone.</p>
+      </article>
+      <article class="card">
+        <h3>Less motion</h3>
+        <p>If your device is set to reduce motion, the site turns off its animations. Nothing flashes, and nothing plays by itself.</p>
+      </article>
+      <article class="card">
+        <h3>Light and dark</h3>
+        <p>The site follows your device's light or dark setting. You can also choose Auto, Light or Dark at the bottom of every page.</p>
+      </article>
+      <article class="card">
+        <h3>Bigger text</h3>
+        <p>You can zoom in to 200 percent. The layout is built to fit small phone screens without scrolling sideways.</p>
+      </article>
+      <article class="card">
+        <h3>Plain language</h3>
+        <p>We write in plain English with short sentences. Most pages start with an "In short" summary. Dates and times are written as text, not only in calendar files.</p>
+      </article>
+    </div>
+    <p>Every page is marked as English, so screen readers can use the right voice. Pages use clear headings in order, tables have headers, and there is no text inside pictures.</p>
+
+    <h2 id="gaps">Known gaps in this preview</h2>
+    <p>This site is a draft. These parts are not finished yet.</p>
+    <ul>
+      <li><strong>Screen reader testing is still to do.</strong> We have not yet tested the site with screen readers such as VoiceOver and NVDA. We will do this before the site launches.</li>
+      <li><strong>Older browsers.</strong> On some older browsers, the Menu button may not open. Every page is also listed at the bottom of each page.</li>
+      <li><strong>Documents on other sites.</strong> Meeting minutes and agendas are on the school website. We have not checked each one for accessibility.</li>
+      <li><strong>"TBC" labels.</strong> Some facts are marked TBC while the PAC executive confirms them. Screen readers also read a short note that says what still needs to be confirmed.</li>
+    </ul>
+
+    <h2 id="report">Tell us about a barrier</h2>
+    <p>If something on this site is hard to see, read or use, please email us. Tell us:</p>
+    <ul>
+      <li>which page you were on</li>
+      <li>what you were trying to do</li>
+      <li>what went wrong, and which device or browser you used, if you know</li>
+    </ul>
+    <p>We will try to fix it. We can also send you the information in another way, for example as plain text in an email. We are parent volunteers, and we will reply as soon as we can.</p>
+    <p class="big-email"><a href="mailto:{{site.pacEmail}}?subject=Accessibility%20problem%20on%20the%20PAC%20website">{{site.pacEmail}}</a></p>
+    <p class="copyline"><button class="copy-btn" type="button" data-copy="{{site.pacEmail}}">Copy address</button></p>
+    <p class="small muted">This statement was written on <time datetime="{{updated_iso}}">{{updated}}</time>. We will update it after testing.</p>
+  </div>
+  <nav class="rail" aria-label="On this page"><p class="eyebrow">On this page</p><ul role="list">
+    <li><a href="#goal">Our goal</a></li>
+    <li><a href="#done">What we have done</a></li>
+    <li><a href="#gaps">Known gaps</a></li>
+    <li><a href="#report">Tell us about a barrier</a></li>
+  </ul></nav>
+</div>

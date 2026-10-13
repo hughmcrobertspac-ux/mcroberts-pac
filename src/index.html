@@ -1,0 +1,82 @@
+<!--{"title": "Home", "description": "The Parent Advisory Council of Hugh McRoberts Secondary in Richmond, BC. Next meeting, how to help, and where PAC money goes.", "out": "index.html", "nav": "home"}-->
+<section class="band hero" aria-labelledby="hero-h">
+  <div class="wrap hero__grid">
+    <div>
+      <p class="eyebrow"><span class="nw">Hugh <span class="mc">Mc</span>Roberts Secondary ·</span> <span class="nw">Parent Advisory Council</span></p>
+      <h1 id="hero-h">You're already on the <span class="gold">team.</span></h1>
+      <p class="lead">If your child goes to McRoberts, you are part of the PAC. There is no sign-up <x-tbc tip="The PAC executive still has to confirm there is no membership fee">and no fee</x-tbc>. Come to a meeting, ask questions, share ideas, and help when you can.</p>
+      <div class="btn-row">
+        <a class="btn btn--gold" href="{{root}}meetings/">Come to a meeting</a>
+        <a class="btn btn--ghost-light" href="{{root}}news/">Get PAC news</a>
+      </div>
+    </div>
+    {{block:next_meeting}}
+  </div>
+</section>
+
+<section class="section" aria-labelledby="board-h">
+  <div class="wrap">
+    <h2 id="board-h" class="vh">What's on the noticeboard</h2>
+    <div class="board">
+      <article class="tile tile--wide reveal">
+        <p class="eyebrow">What the PAC does</p>
+        <h3>Parents helping McRoberts students, one year at a time</h3>
+        <ul class="prose prose--indent">
+          <li>We fund clubs, teams, trips and events through the <a href="{{root}}wish-list/">Teachers' Wish List</a>.</li>
+          <li>We support the Grade 12 <a href="{{root}}grad/">Dry After Grad</a> celebration.</li>
+          <li>We raise money for Grade 12 scholarships.</li>
+          <li>We say thank you to McRoberts staff.</li>
+          <li>We share parents' voices with the school and the Richmond school district.</li>
+        </ul>
+        <div class="btn-row"><a class="btn btn--outline btn--sm" href="{{root}}about/">About the PAC</a></div>
+      </article>
+
+      <article class="tile tile--forest reveal">
+        <p class="eyebrow eyebrow--gold">We need you</p>
+        <h3>Give an hour this fall</h3>
+        <p>Help hand out a fundraiser order at lunch, plan the staff thank-you breakfast, or join the Dry After Grad team if your child is in Grade 12. No experience needed.</p>
+        <div class="btn-row"><a class="btn btn--gold btn--sm" href="{{root}}volunteer/">See volunteer jobs</a></div>
+      </article>
+
+      <article class="tile tile--half reveal">
+        <p class="eyebrow">Where the money goes</p>
+        <h3>PAC money pays for the activities above</h3>
+        <p>It comes from the Province's gaming grant and from families, through fundraisers and donations. Parents vote on how it is spent at PAC meetings.</p>
+        <div class="btn-row"><a class="btn btn--outline btn--sm" href="{{root}}money/">How the money works</a></div>
+      </article>
+
+      <article class="tile tile--half reveal">
+        <p class="eyebrow">From the school</p>
+        <h3>Coming up at McRoberts</h3>
+        {{block:school_dates}}
+        <p class="small">School events, not PAC events. Full list on the <a href="https://mcroberts.sd38.bc.ca/school-calendar" rel="noopener">school calendar</a> and in the <a href="{{link:newsletter}}" rel="noopener">Striker Weekly</a>.</p>
+      </article>
+
+      <article class="tile tile--full tile--outline reveal">
+        <div class="tile__head"><p class="eyebrow">Last year, {{site.lastYear.label}}</p><a class="small" href="{{root}}money/">How the money works</a></div>
+        {{block:last_year}}
+      </article>
+
+      <article class="tile reveal">
+        <p class="eyebrow">New to <span class="mc">Mc</span>Roberts?</p>
+        <h3>Start here</h3>
+        <p>What is a PAC? Do I have to come to every meeting? Can I just listen? Short answers in plain English.</p>
+        <div class="btn-row"><a class="btn btn--outline btn--sm" href="{{root}}faq/">Read the answers</a></div>
+      </article>
+
+      <article class="tile reveal">
+        <p class="eyebrow">For teachers and clubs</p>
+        <h3>Ask for Wish List money</h3>
+        <p>Each fall the PAC funds requests for clubs, teams, trips and events outside regular classes. See the steps and the rules.</p>
+        <div class="btn-row"><a class="btn btn--outline btn--sm" href="{{root}}wish-list/">How the Wish List works</a></div>
+      </article>
+
+      <article class="tile tile--forest reveal">
+        <p class="eyebrow eyebrow--gold">Your {{site.schoolYear}} executive</p>
+        <h3>Parent volunteers you can talk to</h3>
+        <p>Elected at the <time datetime="2026-09-16">September 16</time> meeting. You can reach all of them through one email address.</p>
+        <div class="btn-row"><a class="btn btn--gold btn--sm" href="{{root}}about/#executive">Meet the executive</a></div>
+      </article>
+    </div>
+  </div>
+</section>

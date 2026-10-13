@@ -1,0 +1,22 @@
+<header class="site-header" lang="en">
+  <div class="wrap site-header__inner">
+    <a class="wordmark" href="{{root}}" aria-label="McRoberts PAC, home">
+      <span class="wordmark__mc" aria-hidden="true">McROBERTS</span><svg class="wordmark__strike" viewBox="0 0 14 32" aria-hidden="true"><line x1="3" y1="30" x2="11" y2="2"/></svg><span class="wordmark__pac" aria-hidden="true">PAC</span>
+    </a>
+    <nav class="primary-nav" aria-label="Main">
+      <ul role="list">
+        {{nav_header}}
+      </ul>
+    </nav>
+    <div class="site-header__tools">
+      <a class="btn btn--action btn--sm news-btn" href="{{root}}news/">Get PAC news</a>
+      <button class="menu-btn" type="button" popovertarget="menu-pop">Menu</button>
+    </div>
+  </div>
+  <div id="menu-pop" class="sheet" popover>
+    <div class="sheet__head"><span class="eyebrow">Menu</span><button class="sheet__close" type="button" popovertarget="menu-pop" popovertargetaction="hide">Close</button></div>
+    <nav aria-label="Menu"><ul class="sheet__nav" role="list">
+      {{nav_sheet}}
+    </ul></nav>
+  </div>
+</header>

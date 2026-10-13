@@ -1,0 +1,69 @@
+<!--{"title": "Contact", "description": "Email the McRoberts PAC, find out who to ask about your own child at school, and see where PAC meetings are held.", "out": "contact/index.html", "nav": "contact"}-->
+<section class="band page-head" aria-labelledby="page-h">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1 id="page-h">Contact the PAC</h1>
+    <p class="lead">The PAC has one email address. Use it for meetings, volunteering, PAC money and your ideas.</p>
+    <div class="in-short"><span class="in-short__tag">In short</span><p>Email the PAC at {{site.pacEmail}}. For questions about your own child, contact the school first.</p></div>
+  </div>
+</section>
+
+<div class="wrap section">
+  <div class="prose">
+    <h2 id="email">Email the PAC</h2>
+    <p class="big-email"><a href="mailto:{{site.pacEmail}}">{{site.pacEmail}}</a></p>
+    <p class="copyline"><button class="copy-btn" type="button" data-copy="{{site.pacEmail}}">Copy address</button></p>
+    <p>The PAC is run by parent volunteers. <x-tbc tip="The executive still has to confirm who reads the mailbox and how fast replies go out">We try to reply within a few days.</x-tbc></p>
+    <p><x-tbc tip="The executive still has to confirm which PAC inbox is the official one">Please use this address for all PAC email.</x-tbc></p>
+    <div class="btn-row">
+      <a class="btn btn--action" href="mailto:{{site.pacEmail}}">Write to the PAC</a>
+      <a class="btn btn--outline" href="mailto:{{site.pacEmail}}?subject=Online%20link%20for%20the%20PAC%20meeting">Ask for the online meeting link</a>
+    </div>
+    <p><x-tbc tip="The executive is still deciding whether the PAC will open an Instagram account">The PAC does not have its own social media accounts yet.</x-tbc> To hear PAC news, see <a href="{{root}}news/">Get PAC news</a>, or read the school's <a href="{{link:newsletter}}" rel="noopener">Striker Weekly</a>.</p>
+
+    <h2 id="your-child">Questions about your own child</h2>
+    <div class="callout callout--gold">
+      <p><x-tbc tip="The Chair still has to approve this wording">The PAC does not handle questions or concerns about one student. Please contact the school first.</x-tbc></p>
+    </div>
+    <p>Start with the person closest to the question. If you still need help, go to the next step.</p>
+    <ol class="steps">
+      <li><div><h3>Your child's teacher</h3><p>For questions about a class, homework or marks.</p></div></li>
+      <li><div><h3>Your child's counsellor</h3><p>If you still need help after talking to the teacher.</p></div></li>
+      <li><div><h3>The vice principal or principal</h3><p>If the question is still not answered.</p></div></li>
+      <li><div><h3>The school district</h3><p>The last step, if the school cannot solve it.</p></div></li>
+    </ol>
+
+    <h3>School office</h3>
+    <ul>
+      <li>Phone: <a href="tel:{{phone_tel}}">{{site.school.phone}}</a></li>
+      <li>Email: <a href="mailto:{{site.school.email}}">{{site.school.email}}</a></li>
+      <li>Website: <a href="{{site.school.url}}" rel="noopener">mcroberts.sd38.bc.ca</a></li>
+      <li>Address: {{site.school.address}}</li>
+    </ul>
+    <p>To report an absence, follow the steps on the school's <a href="https://mcroberts.sd38.bc.ca/parents/student-attendance" rel="noopener">student attendance page</a>.</p>
+
+    <h2 id="who">Who to contact for what</h2>
+    <div class="table-wrap">
+      <table class="ledger">
+        <caption class="vh">Who to contact for common questions</caption>
+        <thead><tr><th scope="col">Your question</th><th scope="col">Who to contact</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">PAC meetings, or the online meeting link</th><td>The PAC, by email. See <a href="{{root}}meetings/">Meetings</a>.</td></tr>
+          <tr><th scope="row">Volunteering, or joining the executive</th><td>The PAC, by email. See <a href="{{root}}volunteer/">Get involved</a>.</td></tr>
+          <tr><th scope="row">How PAC money is raised and spent</th><td>The PAC, by email or at a meeting. See <a href="{{root}}money/">Where the money goes</a>.</td></tr>
+          <tr><th scope="row">PAC money for a club, team or trip (for staff)</th><td>Send the request through the principal. See the <a href="{{root}}wish-list/">Teachers' Wish List</a>.</td></tr>
+          <tr><th scope="row">Your child's classes or marks</th><td>Your child's teacher. Report cards are in the <a href="https://myeducation.gov.bc.ca/aspen/logon.do" rel="noopener">MyEducation BC parent portal</a>.</td></tr>
+          <tr><th scope="row">Absences</th><td>The school. See the <a href="https://mcroberts.sd38.bc.ca/parents/student-attendance" rel="noopener">student attendance page</a>.</td></tr>
+          <tr><th scope="row">School fees and trips</th><td><a href="https://richmondsd38.schoolcashonline.com/" rel="noopener">School Cash Online</a>, or the school office.</td></tr>
+          <tr><th scope="row">Bullying or safety</th><td>The school, starting with your child's counsellor or the principal.</td></tr>
+          <tr><th scope="row">Anything else about the school</th><td>The school office, <a href="tel:{{phone_tel}}">{{site.school.phone}}</a>.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">More school and district links are on the <a href="{{root}}resources/">Resources</a> page.</p>
+
+    <h2 id="visit">Where meetings are held</h2>
+    <p>PAC meetings are in the <strong>{{site.meetingDefaults.place}}</strong> at Hugh McRoberts Secondary, {{site.school.address}}. You can also join online on {{site.meetingDefaults.online}}. <a href="mailto:{{site.pacEmail}}?subject=Online%20link%20for%20the%20PAC%20meeting">Email the PAC for the link</a>.</p>
+    <div class="btn-row"><a class="btn btn--action" href="{{root}}meetings/">See all meeting dates</a></div>
+  </div>
+</div>

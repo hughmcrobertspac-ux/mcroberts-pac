@@ -1,0 +1,398 @@
+<!--{"out": "money/2025-26-report/print.html", "standalone": true}-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>McRoberts PAC 2025–26 Financial Report</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* The site's fonts (SIL Open Font License, see assets/fonts/OFL-*.txt). Paths are relative to the built page in docs/, so print it from there (HANDOVER.md). */
+@font-face{font-family:"Big Shoulders";src:url("../../assets/fonts/big-shoulders.woff2") format("woff2");font-weight:100 900}
+@font-face{font-family:"Atkinson Next";src:url("../../assets/fonts/atkinson-next.woff2") format("woff2");font-weight:200 800}
+@font-face{font-family:"Atkinson Mono";src:url("../../assets/fonts/atkinson-mono.woff2") format("woff2");font-weight:200 800}
+:root{
+  --bg:#F8FBF9; --surface:#FFFFFF; --text:#101814; --text-2:#46504A; --text-muted:#5C6660; --line:#CBD8D0; --line-2:#E1E9E4;
+  --forest:#1B3C1F; --forest-2:#224A27; --ink:#08120D; --on-dark:#EEF5F0; --on-dark-muted:#B9C6BE; --on-dark-line:rgba(238,245,240,.16);
+  --gaming:#167D4C; --operating:#C48600; --dag:#4062B5; --spent:#3F4A44; --gold:#F8B11B; --chip:#6B4E00;
+  --f-display:"Big Shoulders","Arial Narrow",sans-serif; --f-body:"Atkinson Next",system-ui,sans-serif; --f-mono:"Atkinson Mono",Menlo,monospace;
+  color-scheme:light;
+}
+@page{size:letter;margin:0}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{margin:0;background:#8B958F}
+body{font:400 10.5pt/1.5 var(--f-body);color:var(--text)}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
+p{margin:0}
+.page > *{flex-shrink:0}
+.page{width:8.5in;height:11in;margin:0 auto 18px;background:var(--bg);position:relative;overflow:hidden;padding:.62in .7in .8in;display:flex;flex-direction:column;gap:18px;break-after:page;page-break-after:always}
+.page.tight{gap:12px;padding-bottom:.74in}
+@media print{html,body{background:none}.page{margin:0}.page:not(.dark){background:#fff}}
+.key{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:6px}
+.page:last-child{break-after:auto;page-break-after:auto}
+.foot{position:absolute;left:.7in;right:.7in;bottom:.38in;display:flex;justify-content:space-between;font:500 7.5pt/1 var(--f-mono);color:var(--text-muted);letter-spacing:.04em;border-top:1px solid var(--line);padding-top:8px}
+.dark .foot{color:var(--on-dark-muted);border-color:var(--on-dark-line)}
+.eyebrow{font:700 8pt/1 var(--f-display);letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted)}
+h2{font-size:30pt;font-weight:800;line-height:.98;letter-spacing:.005em}
+h3{font-size:13pt;font-weight:800;line-height:1.1}
+.lede{font-size:11pt;line-height:1.5;color:var(--text-2);max-width:80ch}
+.head{display:grid;gap:8px}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.mk{font:700 6.5pt/1 var(--f-mono);letter-spacing:.04em;color:var(--text);border:1px solid currentColor;border-radius:3px;padding:1px 3px;margin-left:4px;vertical-align:1px;white-space:nowrap}
+.mk.c{color:var(--text-2)}
+.dark .mk,.board .mk{color:var(--on-dark-muted)}
+.pend{display:inline-block;font:600 8.5pt/1.2 var(--f-mono);color:var(--chip);border:1.25px dashed currentColor;border-radius:5px;padding:2px 6px}
+
+/* dark pages */
+.dark{background:var(--forest);color:var(--on-dark)}
+.dark .eyebrow{color:var(--on-dark-muted)}
+/* the site's strike: one gold line at 4 degrees */
+.edge{position:absolute;left:0;right:0;width:100%;height:.6in;overflow:visible}
+.edge line{stroke:var(--gold);stroke-width:4;vector-effect:non-scaling-stroke}
+.dark > *:not(.edge):not(.foot){position:relative;z-index:1}
+
+/* cover */
+.cover{justify-content:space-between;padding:.7in .75in .9in}
+.wordmark{display:flex;align-items:center;gap:2px;font:800 22pt/1 var(--f-display);letter-spacing:.02em;color:var(--on-dark);margin:0}
+.wordmark svg{width:11px;height:24px;margin:0 3px 0 4px;overflow:visible}
+.wordmark line{stroke:var(--gold);stroke-width:3.2;stroke-linecap:round}
+.cover .school{font:700 8pt/1.3 var(--f-display);letter-spacing:.14em;text-transform:uppercase;color:var(--on-dark-muted);margin-top:8px}
+.cover h1{font-size:76pt;font-weight:800;line-height:.86;text-transform:uppercase;letter-spacing:-.005em;margin:14px 0 20px;max-width:9ch}
+.cover h1 .gold{color:var(--gold)}
+.cover .yr{font:800 15pt/1 var(--f-display);color:var(--gold);letter-spacing:.14em}
+.cover .edge{bottom:1.95in}
+.cover .sub{font-size:13pt;line-height:1.5;color:var(--on-dark-muted);max-width:44ch}
+.cover .meta{display:grid;grid-template-columns:1fr 1fr;gap:18px;border-top:1px solid var(--on-dark-line);padding-top:16px;font-size:9.5pt;color:var(--on-dark-muted)}
+.cover .meta b{display:block;color:var(--on-dark);font:800 12pt/1.2 var(--f-display);margin-bottom:2px}
+
+/* glance */
+.note p{font-size:9pt;line-height:1.45;color:var(--text-2)}
+.note p + p{margin-top:6px}
+.note .sig{margin-top:8px;display:flex;gap:26px;font-size:9.5pt}
+.note .sig b{display:block;font:800 12pt/1.15 var(--f-display);color:var(--text)}
+.note .sig span{font:500 7.5pt/1.3 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
+.board{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(248,177,27,.45);border-radius:12px;overflow:hidden;border:1px solid rgba(248,177,27,.6)}
+.board div{background:var(--ink);color:var(--on-dark);padding:10px 14px;display:grid;gap:3px;align-content:start}
+.board .fig{font:800 30pt/.95 var(--f-display)}
+.board .lab{font:700 10pt/1.3 var(--f-body)}
+.board .sub{font-size:8.5pt;color:var(--on-dark-muted)}
+.season{display:grid;grid-template-columns:repeat(4,1fr);gap:6px 14px}
+.season div{border-top:2px solid var(--c,var(--text-2));padding-top:6px}
+.season .w{font:600 7.5pt/1 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
+.season b{display:block;font:700 9pt/1.25 var(--f-body);margin-top:3px}
+.season span{font-size:7.75pt;line-height:1.3;display:block;color:var(--text-2)}
+.coverage{font:400 7.5pt/1.4 var(--f-body);color:var(--text-2);border:1.25px dashed var(--chip);border-radius:8px;padding:7px 10px}
+
+/* accounts */
+.acct{display:grid;grid-template-columns:1fr 26px 1.1fr 26px 1.15fr;align-items:stretch}
+.acct > div{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:8px 12px;font-size:8.75pt;color:var(--text-2);line-height:1.4}
+.acct .who{border:2px solid var(--c)}
+.acct .who h3{display:flex;gap:8px;align-items:center;font-size:10.5pt;color:var(--text)}
+.acct .who h3::before{content:"";width:9px;height:9px;border-radius:2px;background:var(--c)}
+.acct .who p{font-size:8.5pt;color:var(--text-muted);margin-top:4px}
+.acct .arrow{border:0!important;background:none!important;padding:0!important;display:grid;place-items:center}
+.acct .arrow svg{width:22px;height:10px}
+.acct .arrow path{fill:none;stroke:var(--c);stroke-width:2}
+.acct .lbl{display:block;font:600 7pt/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:5px}
+.map{display:grid;gap:8px}
+.gaming-c{--c:var(--gaming)} .operating-c{--c:var(--operating)}
+.callout{display:flex;gap:10px;padding:10px 12px;border-radius:0 10px 10px 0;background:#EBF2EE;border-left:4px solid var(--gold);font-size:9.5pt;color:var(--text-2)}
+.callout b{color:var(--text)}
+.callout .ic{flex:none;width:18px;height:18px;border-radius:50%;border:1.5px solid var(--operating);color:var(--operating);display:grid;place-items:center;font:700 9pt/1 var(--f-display)}
+
+/* charts */
+.viz{display:block;overflow:visible}
+.viz .gridline{stroke:var(--line-2);stroke-width:1} .viz .axis{stroke:var(--line);stroke-width:1}
+.viz .tick{fill:var(--text-muted);font:500 8pt var(--f-mono)} .viz .tick.muted{opacity:.55}
+.viz .cat{fill:var(--text);font:500 9pt var(--f-body)} .viz .val{fill:var(--text-2);font:600 8.5pt var(--f-mono)}
+.viz .note{fill:var(--text-2);font:500 8pt var(--f-body)} .viz .note.strong{fill:var(--text);font-weight:700}
+.viz .line{fill:none;stroke-width:2;stroke-linejoin:round} .viz .line.gaming{stroke:var(--gaming)} .viz .line.operating{stroke:var(--operating)}
+.viz .bridge{stroke:var(--gaming);stroke-width:1.75;stroke-dasharray:3 4}
+.viz .dot{stroke-width:1.75} .viz .dot.solid{fill:var(--gaming);stroke:#fff} .viz .dot.ring{fill:#fff;stroke:var(--gaming)} .viz .dot.ring.operating{stroke:var(--operating)} .viz .dot.solid.operating{fill:var(--operating)}
+.viz .pending-band{fill:none;stroke:var(--chip);stroke-width:1;stroke-dasharray:4 4;opacity:.8}
+.viz .pending-label{fill:var(--chip);font:600 7.5pt var(--f-mono);letter-spacing:.06em;text-transform:uppercase}
+.viz .hit{fill:transparent} .viz .track{fill:transparent}
+.viz .bar.gaming{fill:var(--gaming)} .viz .bar.operating{fill:var(--operating)} .viz .bar.dag{fill:var(--dag)} .viz .bar.spent{fill:var(--spent)} .viz .bar.open{fill:url(#hatch)}
+.viz .zero{stroke-width:2} .viz .zero.grant{stroke:var(--gaming)} .viz .zero.spent{stroke:var(--spent)}
+.viz .badge{fill:var(--text)} .viz .badge-t{fill:#fff;font:700 8pt var(--f-mono)}
+.legend{display:flex;gap:12px;font-size:8.5pt;color:var(--text-2)}
+.legend span{display:inline-flex;gap:6px;align-items:center}
+.legend i{width:9px;height:9px;border-radius:2px;background:var(--c)}
+.legend i.ringi{border-radius:50%;background:none;border:1.75px solid var(--c)}
+.legend i.solidi{border-radius:50%}
+.chart-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px}
+.callouts{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:3px;font-size:8.5pt;color:var(--text-2)}
+.callouts li{display:flex;gap:8px;align-items:baseline}
+.callouts b{flex:none;width:14px;height:14px;border-radius:50%;background:var(--text);color:#fff;font:700 7.5pt/14px var(--f-mono);text-align:center}
+
+/* statement */
+.stmt{width:100%;border-collapse:collapse;font-size:9.5pt}
+.stmt td{padding:4px 0;border-bottom:1px solid var(--line-2);vertical-align:top}
+.stmt td:last-child{text-align:right;font-family:var(--f-mono);white-space:nowrap;padding-left:12px}
+.stmt tr.sum td{border-top:1.5px solid var(--text);border-bottom:0;font-weight:700}
+.stmt .d{display:block;font-size:8pt;color:var(--text-muted)}
+.commit-legend{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 14px;margin-top:8px}
+.commit-legend div{border-top:3px solid var(--c);padding-top:5px}
+.commit-legend b{display:block;font:600 10.5pt/1.2 var(--f-mono)}
+.commit-legend span{font-size:8.5pt;color:var(--text-2)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+/* wish */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.kpi{border-top:2px solid var(--text);padding-top:6px}
+.kpi b{display:block;font:800 24pt/1 var(--f-display)}
+.kpi span{font-size:8.5pt;color:var(--text-2)}
+.depts{columns:2;column-gap:20px;font-size:8.5pt;color:var(--text-2)}
+.depts div{break-inside:avoid;margin-bottom:5px}
+.depts b{color:var(--text);font-weight:700}
+.depts .num{float:right;color:var(--text);font-weight:600}
+.dag{display:grid;grid-template-columns:auto auto 1fr;gap:16px;align-items:center;padding:12px 16px;border-radius:12px;background:#EEF1F8;border:1.5px solid #B3C0E2}
+.dag .eq{font:800 26pt/.95 var(--f-display)}
+.dag .eq small{display:block;font:500 7pt/1.3 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-top:4px}
+.dag .op{font:400 16pt/1 var(--f-mono);color:var(--text-muted)}
+.dag p{font-size:9pt;color:var(--text-2)}
+
+/* family */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.fr{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--operating);border-radius:10px;padding:9px 10px;display:flex;flex-direction:column;gap:3px}
+.fr .w{font:600 7pt/1.2 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
+.fr b{font:700 9.5pt/1.25 var(--f-body)}
+.fr .v{font-size:8pt;color:var(--text-2)}
+.fr .a{font:800 18pt/1 var(--f-display);color:var(--text);margin-top:auto;padding-top:6px}
+.total{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline;border-top:1.5px solid var(--text);padding-top:6px;font-size:9.5pt}
+.total > span:last-child{flex-basis:100%}
+.total b{font:600 13pt/1 var(--f-mono)}
+.spend div{display:flex;justify-content:space-between;gap:10px;padding:3px 0;border-bottom:1px solid var(--line-2);font-size:9.5pt}
+.spend .num{white-space:nowrap}
+.spend small{display:block;color:var(--text-muted);font-size:8pt}
+.spend div.sum{border-top:1.5px solid var(--text);border-bottom:0;font-weight:700}
+.ctrl{list-style:none;margin:0;padding:0;font-size:9pt;display:grid;gap:4px}
+.ctrl li{display:flex;gap:8px}
+.ctrl li::before{content:"✓";color:var(--gaming);font-weight:700}
+.nexty{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.nexty div{border:1px dashed var(--text-2);border-radius:10px;padding:6px 10px;font-size:8.5pt;color:var(--text-2)}
+.nexty b{display:block;color:var(--text);font:700 9.5pt/1.25 var(--f-display);margin-bottom:2px}
+
+/* appeal */
+.appeal{padding:.75in .75in 1in;gap:24px}
+.appeal h2{font-size:64pt;font-weight:800;line-height:.88;text-transform:uppercase;margin-top:6px;max-width:11ch}
+.appeal .edge{bottom:.8in}
+.appeal .why{display:grid;gap:8px;max-width:58ch}
+.appeal .why p{font-size:12pt;color:var(--on-dark-muted)}
+.appeal .why strong{color:var(--on-dark)}
+.goals{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(248,177,27,.45);border-radius:12px;overflow:hidden;border:1px solid rgba(248,177,27,.6)}
+.goals div{background:var(--ink);padding:12px 14px}
+.goals b{display:block;font:800 30pt/.95 var(--f-display)}
+.goals span{font-size:9pt;color:var(--on-dark-muted)}
+.goals strong{color:var(--on-dark);font-weight:700;display:block;margin-top:6px}
+.impact{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.impact div{border:1px solid var(--on-dark-line);border-radius:10px;padding:10px 12px;background:var(--forest-2)}
+.impact b{display:block;font:800 22pt/1 var(--f-display);color:var(--gold)}
+.impact span{font-size:8.5pt;color:var(--on-dark-muted);display:block;margin-top:6px}
+.howbox{background:var(--on-dark);color:var(--text);border-radius:14px;padding:16px 18px;display:grid;grid-template-columns:1.2fr 1fr;gap:18px}
+.howbox .lbl{font:600 7pt/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
+.howbox code{display:inline-block;margin:8px 0 6px;font:600 13pt/1 var(--f-mono);background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.howbox p{font-size:9pt;color:var(--text-2)}
+.howbox ul{margin:6px 0 0;padding-left:16px;font-size:9pt;color:var(--text-2);display:grid;gap:3px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#E1E9E4"/><line x1="0" y1="0" x2="0" y2="6" stroke="#46504A" stroke-width="1.5"/></pattern></defs></svg>
+
+<!-- 1 cover -->
+<section class="page dark cover">
+  <svg class="edge" viewBox="0 0 816 57" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="57" x2="816" y2="0"/></svg>
+  <div><p class="wordmark">McROBERTS<svg viewBox="0 0 14 32" aria-hidden="true"><line x1="3" y1="30" x2="11" y2="2"/></svg>PAC</p><p class="school">Hugh McRoberts Secondary · Richmond, BC</p></div>
+  <div>
+    <p class="yr">2025–26</p>
+    <h1>Where the money <span class="gold">went.</span></h1>
+    <p class="sub" id="coverSub"></p>
+  </div>
+  <div class="meta">
+    <div id="coverWho"></div>
+    <div id="coverEdition"></div>
+  </div>
+</section>
+
+<!-- 2 glance -->
+<section class="page tight">
+  <div class="head"><p class="eyebrow">At a glance</p><h2>The year in four numbers</h2></div>
+  <div class="board" id="board"></div>
+  <div class="note panel">
+    <p class="eyebrow" style="margin-bottom:6px">About this report</p>
+    <p>This report shows where PAC money came from and where it went in the 2025–26 school year. Most of it came from the BC Community Gaming Grant. The Province gives <span data-fmt="rate"></span> for each student every year, for activities outside regular classes. The grant cannot pay for scholarships or for thanking our staff. Those depend on you, through fundraisers and donations.</p>
+    <p>Thank you to every family who ordered samosas, chocolates and bubble tea or gave toward the staff breakfast, to the volunteers who ran each sale, and to last year's executive and treasurers, whose records made this report possible. This report's figures for the gaming account and the family fund are checked against the PAC's bank record for the whole year.</p>
+    <div class="sig" id="sig"></div>
+  </div>
+  <div><p class="eyebrow" style="margin-bottom:6px">The school year</p><div class="season" id="season"></div></div>
+  <p class="coverage" id="coverage"></p>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>2</span></div>
+</section>
+
+<!-- 3 how it works + history -->
+<section class="page tight">
+  <div class="head"><p class="eyebrow">How PAC money works</p><h2>Two accounts, two jobs</h2><p class="lede">The PAC keeps two bank accounts at Coast Capital Savings. Each one has its own source of money and its own rules. This report covers both for the whole school year. Dry After Grad has its own committee and its own account; the PAC supports it from the gaming account.</p></div>
+  <div class="map" id="map"></div>
+  <div class="callout"><span class="ic">!</span><p><b>The grant has limits.</b> Provincial rules do not allow gaming money to pay for scholarships, staff lunches or anything the school must provide for classes. The family fund pays for the things the grant cannot.</p></div>
+  <div class="head" style="margin-top:6px"><p class="eyebrow">The longer view</p><h3 style="font-size:15pt">Seven years of the grant</h3><p class="lede" id="histLede" style="font-size:10pt;max-width:80ch"></p></div>
+  <div class="panel">
+    <div class="chart-head"><h3>Grant received and spent, by grant year</h3><div class="legend"><span><i style="--c:var(--gaming)"></i>Grant received</span><span><i style="--c:var(--spent)"></i>Spent on students</span></div></div>
+    <div id="histChart"></div>
+    <p style="margin-top:4px;font-size:8pt;line-height:1.4;color:var(--text-muted)" id="histNote"></p>
+  </div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>3</span></div>
+</section>
+
+<!-- 4 gaming -->
+<section class="page tight">
+  <div class="head"><p class="eyebrow">Gaming account</p><h2>The BC grant, month by month</h2><p class="lede">The balance fell in September 2025 when the 2024–25 wish-list cheque was cashed, then rose in October when the new grant arrived. It earned interest until August 2026, when the PAC paid the school back for the 2025–26 wish list and the Dry After Grad bus, and ended the year at <span data-fmt="gamingClosing"></span>.</p></div>
+  <div class="panel">
+    <div class="chart-head"><h3>Balance at the end of each month</h3><div class="legend"><span><i class="solidi" style="--c:var(--gaming);background:var(--gaming)"></i>From the bank record</span></div></div>
+    <div id="gamingChart"></div>
+    <ol class="callouts"><li><b>1</b><span><strong>September.</strong> The 2024–25 wish-list cheque was cashed: −<span data-fmt="chequeAmt"></span></span></li><li><b>2</b><span><strong>October.</strong> The BC gaming grant arrived: +<span data-fmt="grant2"></span></span></li><li><b>3</b><span><strong>August.</strong> The 2025–26 wish-list cheque was cashed: −<span data-fmt="wishChequeAmt"></span>. It paid <span data-fmt="wishPart2"></span> for the wish list and <span data-fmt="dag2"></span> for the Dry After Grad bus.</span></li></ol>
+  </div>
+  <div class="cols">
+    <table class="stmt" id="stmt"></table>
+    <div>
+      <h3 style="margin-bottom:4px">Where the year's gaming money went</h3>
+      <p class="num" style="font-size:8pt;color:var(--text-muted);margin-bottom:8px" id="asof"></p>
+      <div id="commitBar"></div>
+      <div class="commit-legend" id="commitLegend"></div>
+      <p style="font-size:8.5pt;color:var(--text-2);margin-top:10px" id="commitNote"></p>
+    </div>
+  </div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>4</span></div>
+</section>
+
+<!-- 5 wish list + dag -->
+<section class="page tight">
+  <div class="head"><p class="eyebrow">The wish list</p><h2>What school groups asked for</h2><p class="lede">Each fall, teachers and clubs send the PAC their requests. In November the PAC approved <span data-fmt="approved2"></span> (the vote is still to be confirmed in the minutes). The school bought the items, and in August 2026 one cheque paid the school back <span data-fmt="wishPart2"></span> for the wish list and <span data-fmt="dag2"></span> for the Dry After Grad bus.</p></div>
+  <div class="kpis" id="kpis"></div>
+  <div class="panel"><div class="chart-head"><h3>Asked for, by school group</h3></div><div id="wishChart"></div></div>
+  <div class="depts" id="depts"></div>
+  <div class="dag" id="dag"></div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>5</span></div>
+</section>
+
+<!-- 6 family fund + stewardship -->
+<section class="page tight">
+  <div class="head"><p class="eyebrow">Family fund</p><h2>What families made possible</h2><p class="lede">The family fund is the PAC's operating account. Almost all of its money comes from McRoberts families, and it pays for what the grant cannot: scholarships and thank-yous to our staff.</p></div>
+  <div class="cards" id="cards"></div>
+  <div class="cols">
+    <div style="display:grid;gap:12px;align-content:start"><div class="total" id="total"></div><div class="panel"><div class="chart-head"><h3>Balance at the end of each month</h3></div><div id="opChart"></div><p style="font-size:8pt;color:var(--text-2);margin-top:4px" id="opHint"></p></div></div>
+    <div><h3 style="margin-bottom:4px">Money in and out</h3><div class="spend" id="spend"></div></div>
+  </div>
+  <div class="head" style="margin-top:4px"><p class="eyebrow">Keeping money safe</p><h3 style="font-size:15pt">How we look after the money</h3><p style="font-size:8.5pt;color:var(--text-2)">Right: what we will propose for 2026–27.</p></div>
+  <div class="cols">
+    <ul class="ctrl" id="ctrl"></ul>
+    <div class="nexty" id="nexty"></div>
+  </div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>6</span></div>
+</section>
+
+<!-- 7 appeal -->
+<section class="page dark appeal">
+  <svg class="edge" viewBox="0 0 816 57" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="57" x2="816" y2="0"/></svg>
+  <p class="eyebrow">Join the team</p>
+  <h2>Help us fund 2026–27.</h2>
+  <div class="why" id="why"></div>
+  <div><p class="eyebrow" style="margin-bottom:8px" id="goalsLabel"></p><div class="goals" id="goals"></div></div>
+  <div><p class="eyebrow" style="margin-bottom:8px">What your gift does</p><div class="impact" id="impact"></div></div>
+  <div class="howbox">
+    <div><span class="lbl">How to give</span><br><code id="etr"></code><p id="how"></p></div>
+    <div><span class="lbl">Other ways to help</span><ul id="other"></ul></div>
+  </div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>7</span></div>
+</section>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script>
+(function(){
+  const R = window.REPORT, V = window.PACViz, $ = id => document.getElementById(id), money = V.money;
+  const pend = () => '<span class="pend">Pending</span>';
+  const mk = s => { const m = V.statusMeta(s).mark; return m ? `<span class="mk${s === 'reported' ? '' : ' c'}">${m}</span>` : ''; };
+  V.fillCopy(document);
+
+  $('board').innerHTML = R.headline.map(h => `<div><span class="fig">${money(h.value,0)}${mk(h.status)}</span><span class="lab">${h.label}</span><span class="sub">${h.note}</span></div>`).join('');
+  // A person is named only after they agree; until then the role stands in (see the note at the top of data.js).
+  const P0 = R.meta.preparedBy, Rv = R.meta.reviewer;
+  const who = p => p.name ? `${p.name}, ${p.role}` : `the ${p.role}`;
+  const sign = (p, label) => p.name ? `<div><b>${p.name}</b><span>${label} · ${p.role}</span></div>` : `<div><b>${p.role}</b><span>${label}</span></div>`;
+  $('coverSub').textContent = `The Parent Advisory Council (PAC) financial report for the ${R.meta.period.replace('School year', 'school year')}.`;
+  $('coverWho').innerHTML = `<b>Draft prepared by</b>${P0.name ? who(P0) : P0.role}<br>For review by ${who(Rv)}`;
+  $('coverEdition').innerHTML = `<b>${R.meta.edition}</b>${R.meta.basis}`;
+  $('sig').innerHTML = sign(P0, 'Draft prepared by') + sign(Rv, 'For review');
+  const kc = { money:'var(--gaming)', fundraiser:'var(--operating)', decision:'var(--text)', event:'var(--dag)', meeting:'var(--text-2)' };
+  $('season').innerHTML = R.timeline.map(t => `<div style="--c:${kc[t.kind]}"><span class="w">${t.when}</span><b>${t.label}</b><span>${t.detail}</span></div>`).join('');
+  const keyItem = s => s.key === 'pending' ? `<span><span class="pend">${s.label}</span> ${s.description}</span>` : s.mark ? `<span>${mk(s.key).replace('class="', 'style="margin-left:0" class="')} ${s.description}</span>` : `<span>No mark: ${s.description.charAt(0).toLowerCase() + s.description.slice(1)}</span>`;
+  const order = ['reported', 'derived', 'pending', 'confirmed'].map(k => V.statusMeta(k));
+  $('coverage').innerHTML = `${R.meta.coverage.long}<span class="key">${order.map(keyItem).join('')}</span>`;
+
+  const A = R.accounts;
+  const arrow = `<div class="arrow"><svg viewBox="0 0 22 10"><path d="M0 5 H19 M15 1 L20 5 L15 9"/></svg></div>`;
+  $('map').innerHTML = [['gaming','gaming-c'],['operating','operating-c']].map(([k,c]) => { const a = A[k]; return `<div class="acct ${c}"><div><span class="lbl">Money in</span>${a.funds}</div>${arrow}<div class="who"><h3>${a.name}</h3><p>${a.rules}</p></div>${arrow}<div><span class="lbl">Pays for</span>${a.pays}</div></div>`; }).join('');
+
+  const H = R.history;
+  $('histLede').textContent = `Since February 2019 the PAC has received ${money(H.totals.grant,0)} in gaming grants and spent ${money(H.totals.spent,0)} of gaming money on students. ${H.whyMore}`;
+  const lastYear = H.years[H.years.length - 1];
+  $('histNote').textContent = `${H.note} The last bar ${lastYear.note.charAt(0).toLowerCase() + lastYear.note.slice(1)}.`;
+  V.pairBars($('histChart'), { rows: H.years, height: 215, interactive: false });
+
+  const G = A.gaming;
+  V.balanceLine($('gamingChart'), { data: G.monthly, height: 230, interactive: false });
+  $('stmt').innerHTML = `
+    <tr><td>Balance on August 31, 2025<span class="d">Start of the school year</span></td><td>${money(G.opening.value,2)}</td></tr>
+    <tr><td>The 2024–25 wish-list cheque was cashed<span class="d">Cheque ${G.carriedCheque.number}, written ${G.carriedCheque.writtenLabel}, cashed ${G.carriedCheque.clearedLabel}</span></td><td>${money(-G.carriedCheque.value,2)}${mk(G.carriedCheque.status)}</td></tr>
+    <tr><td>BC Community Gaming Grant<span class="d">Arrived ${G.grant.dateLabel}</span></td><td>+${money(G.grant.value,2)}${mk(G.grant.status)}</td></tr>
+    ${[G.interestSepJan, G.interestFebApr, G.interestMayAug].map(r => `<tr><td>Bank interest, ${r.label}</td><td>+${money(r.value,2)}${mk(r.status)}</td></tr>`).join('')}
+    <tr><td>The 2025–26 wish-list cheque was cashed<span class="d">Cheque ${G.wishCheque.number}, written ${G.wishCheque.writtenLabel}, cashed ${G.wishCheque.clearedLabel}</span><span class="d">Paid ${G.wishCheque.split.map(p => `${money(p.value,2)}${mk(p.status)} for ${p.label}`).join(' and ')}</span></td><td>${money(-G.wishCheque.value,2)}${mk(G.wishCheque.status)}</td></tr>
+    <tr class="sum"><td>Balance on August 31, 2026</td><td>${money(G.closing.value,2)}${mk(G.closing.status)}</td></tr>`;
+  $('asof').textContent = `${money(G.commitments.balance,2)} · ${G.commitments.asOf}`;
+  const partCls = { carried: 'spent', wish: 'gaming', dag: 'dag', left: 'open' };
+  const cparts = G.commitments.parts.map(p => ({...p, cls: partCls[p.key]}));
+  V.stackBar($('commitBar'), { parts: cparts, height: 22 });
+  $('commitLegend').innerHTML = cparts.map(p => `<div style="--c:${p.cls==='open'?'var(--text-2)':`var(--${p.cls})`}"><b>${money(p.value,2)}${mk(p.status)}</b><span>${p.label}</span></div>`).join('');
+  $('commitNote').textContent = `${G.commitments.note} ${G.commitments.cashed}`;
+
+  const W = R.wishlist;
+  const [wishPart, dagPart] = ['wish','dag'].map(k => G.wishCheque.split.find(p => p.key === k));
+  $('kpis').innerHTML = `<div class="kpi"><b>${W.requests}</b><span>requests from ${W.groups} school groups</span></div><div class="kpi"><b>${money(W.requested.value,2)}${mk(W.requested.status)}</b><span>asked for in total</span></div><div class="kpi"><b>${money(W.approved.value,2)}${mk(W.approved.status)}</b><span>approved on November 12, 2025 (the vote is still to be confirmed in the minutes)</span></div><div class="kpi" style="border-color:var(--gaming)"><b>${money(wishPart.value,2)}${mk(wishPart.status)}</b><span>paid for the wish list in August 2026, plus ${money(dagPart.value,2)} for the Dry After Grad bus</span></div>`;
+  V.barsH($('wishChart'), { rows: W.departments.map(d => ({ label: d.name, v: d.requested })), rowH: 17, labelW: 120, interactive: false });
+  $('depts').innerHTML = W.departments.map(d => `<div><b>${d.name}</b><span class="num">${money(d.requested,0)}</span><br>${d.items.join(' · ')}</div>`).join('') + `<div style="color:var(--text-muted)">${W.note}</div>`;
+  const D = R.dag;
+  $('dag').innerHTML = `<p class="eyebrow" style="grid-column:1/-1;margin-bottom:-4px">Dry After Grad · a safe night for the Class of 2026</p><div class="eq">${D.grads}<small>Graduates reported in Feb</small></div><div class="eq">${money(D.paid.value,0)}${mk(D.paid.status)}<small>Paid by the PAC<br>for the bus</small></div><p>About ${money(R.rates.dagPerGrad,0)} for each graduate, for the celebration on ${D.eventDate}. ${D.note}</p>`;
+
+  const O = A.operating;
+  $('cards').innerHTML = O.raised.map(f => `<div class="fr"><span class="w">${f.when}</span><b>${f.name}</b><span class="v">${f.volume}</span><span class="a">${money(f.value,2)}${mk(f.status)}</span></div>`).join('');
+  $('total').innerHTML = `<span>Into the family fund ${O.raisedThrough}</span><b>${money(O.moneyIn.value,2)}${mk(O.moneyIn.status)}</b><span style="font-size:8pt;color:var(--text-muted)">${money(O.raised.reduce((a,b)=>a+b.value,0),2)} from the sales and donations above and ${money(O.otherIn.value,2)} ${O.otherIn.label}. ${O.salesNote}</span>`;
+  $('opHint').textContent = O.snapshotNote;
+  V.snapshotLine($('opChart'), { data: O.snapshots, height: 140, interactive: false });
+  // A small statement, so the family fund adds up on the page: opening + money in − money out = closing.
+  $('spend').innerHTML = `<div><span>Balance on August 31, 2025</span><span class="num">${money(O.opening.value,2)}${mk(O.opening.status)}</span></div>` +
+    `<div><span>Into the family fund (above)</span><span class="num">+${money(O.moneyIn.value,2)}${mk(O.moneyIn.status)}</span></div>` +
+    O.spent.map(s => `<div><span>${s.name}<small>${s.detail}</small></span><span class="num">${s.value==null?pend():money(-s.value,2)+mk(s.status)}</span></div>`).join('') +
+    `<div class="sum"><span>Balance on August 31, 2026</span><span class="num">${money(O.closing.value,2)}${mk(O.closing.status)}</span></div>`;
+  $('ctrl').innerHTML = R.stewardship.controls.map(c => `<li>${c}</li>`).join('') + `<li>${R.stewardship.meetings.length} PAC meetings, September 2025 to May 2026</li>`;
+  $('nexty').innerHTML = R.stewardship.nextYear.map(n => `<div><b>${n.title}</b>${n.body}</div>`).join('');
+
+  const P = R.appeal;
+  $('why').innerHTML = P.why.map(w => `<p>${w.lead ? `<strong>${w.lead}</strong> ` : ''}${w.text}</p>`).join('');
+  $('goalsLabel').textContent = P.goalsLabel;
+  $('goals').innerHTML = P.goals.map(g => `<div><b>${money(g.target,0)}</b><strong>${g.label}</strong><span>${g.detail}</span></div>`).join('');
+  $('impact').innerHTML = P.impact.map(p => `<div><b>${money(p.amount,0)}</b><span>${p.text}</span></div>`).join('');
+  if (P.howToGive.status === 'pending') {
+    // The address stays out of the printed report until the Treasurer confirms it takes donations.
+    $('etr').remove();
+    $('how').innerHTML = `Online giving is coming soon. We will share the details once the PAC Treasurer confirms them. <span class="pend">To be confirmed</span>`;
+  } else {
+    $('etr').textContent = P.howToGive.to;
+    $('how').innerHTML = `Send an ${P.howToGive.method} to this address. In the message, write "${P.howToGive.message}". Every dollar goes to the family fund.`;
+  }
+  $('other').innerHTML = P.otherWays.map(o => `<li>${o}</li>`).join('');
+  document.querySelectorAll('.foot span:first-child').forEach(n => n.textContent = 'McRoberts PAC · 2025–26 Financial Report · Draft for review');
+  document.documentElement.dataset.ready = '1';
+})();
+</script>
+</body>
+</html>

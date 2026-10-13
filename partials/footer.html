@@ -1,0 +1,21 @@
+<footer class="site-footer" lang="en">
+  <div class="wrap site-footer__grid">
+    <div class="site-footer__about">
+      <p class="wordmark wordmark--footer" aria-hidden="true"><span class="wordmark__mc">McROBERTS</span><svg class="wordmark__strike" viewBox="0 0 14 32"><line x1="3" y1="30" x2="11" y2="2"/></svg><span class="wordmark__pac">PAC</span></p>
+      <p>The McRoberts PAC is the Parent Advisory Council of Hugh McRoberts Secondary, run by parent volunteers under the BC School Act. This is not an official website of the school or Richmond School District No. 38. For school business, attendance or records, contact the school office at <a href="tel:{{phone_tel}}">{{site.school.phone}}</a> or visit <a href="{{site.school.url}}" rel="noopener">mcroberts.sd38.bc.ca</a>.</p>
+      <p class="copyline"><span>Email the PAC:</span> <a href="mailto:{{site.pacEmail}}" class="mono">{{site.pacEmail}}</a> <button class="copy-btn" type="button" data-copy="{{site.pacEmail}}">Copy</button></p>
+    </div>
+    <nav class="site-footer__nav" aria-label="Site">
+{{nav_footer}}
+    </nav>
+  </div>
+  <div class="wrap site-footer__base">
+    <fieldset class="theme-switch" hidden>
+      <legend class="vh">Colour theme</legend>
+      <label><input type="radio" name="theme" value="auto" checked> Auto</label>
+      <label><input type="radio" name="theme" value="light"> Light</label>
+      <label><input type="radio" name="theme" value="dark"> Dark</label>
+    </fieldset>
+    <p class="small">Last updated {{updated}}. <span class="preview-line">Preview: a draft proposal, not yet approved by the PAC executive.</span></p>
+  </div>
+</footer>

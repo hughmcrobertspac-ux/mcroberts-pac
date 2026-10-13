@@ -1,0 +1,79 @@
+<!--{"title": "Resources", "description": "Links McRoberts families use most: school calendar, School Cash Online, MyEd, the district and parent groups. Plus who to ask for what.", "out": "resources/index.html", "nav": "resources"}-->
+<section class="band page-head" aria-labelledby="page-h">
+  <div class="wrap">
+    <p class="eyebrow">Resources</p>
+    <h1 id="page-h">Helpful links for families</h1>
+    <p class="lead">The school, the school district and parent groups each have their own websites. Here are the pages McRoberts families use most, and who to ask for what.</p>
+    <div class="in-short"><span class="in-short__tag">In short</span><p>Questions about your own child go to the school first: the teacher, then the counsellor, then a vice principal or the principal. Come to the PAC for parents' ideas, meetings, volunteering and PAC funding.</p></div>
+  </div>
+</section>
+<div class="wrap layout layout--rail">
+  <div>
+    <section class="section--tight" aria-labelledby="school-links">
+      <div class="section-head">
+        <h2 id="school-links">School links</h2>
+        <p>Dates, fees, report cards and school news. The school and the school district run these pages, not the PAC.</p>
+      </div>
+      {{block:links_family}}
+    </section>
+
+    <section class="section--tight" aria-labelledby="district-links">
+      <div class="section-head">
+        <h2 id="district-links">District, province and parent groups</h2>
+        <p>The Richmond School District, parent groups for Richmond and for all of BC, and a few useful pages from the Province of BC.</p>
+      </div>
+      {{block:links_district}}
+    </section>
+
+    <section class="section--tight" aria-labelledby="who-to-contact">
+      <div class="section-head">
+        <h2 id="who-to-contact">Who to contact for what</h2>
+        <p>For a question about your own child, start with the person who knows your child best. If that does not solve it, go to the next step.</p>
+      </div>
+      <div class="layout">
+        <ol class="steps">
+          <li><div><h3>Your child's teacher</h3><p>Start here for questions about a class, marks or homework.</p></div></li>
+          <li><div><h3>Your child's counsellor</h3><p>Each student has a school counsellor, based on their last name. The school's <a href="https://mcroberts.sd38.bc.ca/information/our-staff" rel="noopener">staff page</a> lists them. A counsellor can help when a concern is bigger than one class.</p></div></li>
+          <li><div><h3>A vice principal or the principal</h3><p>If the teacher and counsellor cannot solve it, call or email the school office and ask to speak with a vice principal or the principal.</p></div></li>
+          <li><div><h3>The Richmond School District</h3><p>If the school cannot solve it, you can contact the <a href="https://sd38.bc.ca" rel="noopener">Richmond School District (SD38)</a>.</p></div></li>
+        </ol>
+        <div class="callout">
+          <p><strong>Not sure where to start?</strong> Call the school office at <a href="tel:{{phone_tel}}">{{site.school.phone}}</a> or email <a href="mailto:{{site.school.email}}">{{site.school.email}}</a>. The office can point you to the right person.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--tight" aria-labelledby="pac-help">
+      <div class="section-head">
+        <h2 id="pac-help">When to contact the PAC</h2>
+        <p>The PAC is a group of parent volunteers, separate from the school. Come to the PAC for things that affect many students and families.</p>
+      </div>
+      <div class="layout">
+        <div class="cards">
+          <article class="card">
+            <h3>Parents' views and meetings</h3>
+            <p>Ideas and concerns that affect many students. Bring them to a PAC meeting, or email the PAC. The PAC shares parents' views with the principal and with the Richmond District Parents Association.</p>
+            <div class="btn-row"><a class="btn btn--outline btn--sm" href="{{root}}meetings/">See meeting dates</a><a class="btn btn--outline btn--sm" href="{{root}}contact/">Contact the PAC</a></div>
+          </article>
+          <article class="card">
+            <h3>Volunteering</h3>
+            <p>Help with fundraisers, the staff thank-you breakfast or Dry After Grad. No experience needed.</p>
+            <div class="btn-row"><a class="btn btn--outline btn--sm" href="{{root}}volunteer/">See volunteer jobs</a></div>
+          </article>
+          <article class="card">
+            <h3>PAC funding</h3>
+            <p>How the PAC spends its money, and how teachers ask for money through the Teachers' Wish List.</p>
+            <div class="btn-row"><a class="btn btn--outline btn--sm" href="{{root}}money/">Where the money goes</a><a class="btn btn--outline btn--sm" href="{{root}}wish-list/">Teachers' Wish List</a></div>
+          </article>
+        </div>
+        <div class="callout callout--gold">
+          <p><x-tbc tip="The Chair still has to approve this wording">The PAC does not handle concerns about one student or one staff member. PAC meetings do not discuss individual students, parents or staff.</x-tbc> Please take these to the school, using the steps above.</p>
+        </div>
+        <div class="prose">
+          <p>Cannot find what you need? <a href="{{root}}faq/">Read the common questions</a> or <a href="{{root}}contact/">email the PAC</a>, and we will point you to the right place.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <nav class="rail" aria-label="On this page"><p class="eyebrow">On this page</p><ul role="list"><li><a href="#school-links">School links</a></li><li><a href="#district-links">District and parent groups</a></li><li><a href="#who-to-contact">Who to contact for what</a></li><li><a href="#pac-help">When to contact the PAC</a></li></ul></nav>
+</div>
