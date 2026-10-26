@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>McRoberts PAC 2025–26 Financial Report: the year in brief</title>
+<meta name="author" content="McRoberts PAC">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* The two-page 2025–26 report. Every figure comes from data.js; print it from the built copy in docs/ (HANDOVER.md). */
+@font-face{font-family:"Big Shoulders";src:url("../../assets/fonts/big-shoulders.woff2") format("woff2");font-weight:100 900}
+@font-face{font-family:"Atkinson Next";src:url("../../assets/fonts/atkinson-next.woff2") format("woff2");font-weight:200 800}
+@font-face{font-family:"Atkinson Mono";src:url("../../assets/fonts/atkinson-mono.woff2") format("woff2");font-weight:200 800}
+:root{--forest:#1B3C1F;--ink:#08120D;--text:#101814;--muted:#46504A;--line:#CBD8D0;--surface:#F3F7F4;--gold:#F8B11B;--gaming:#167D4C;--operating:#C48600;--dag:#4062B5;
+  --f-d:"Big Shoulders","Arial Narrow",sans-serif;--f-b:"Atkinson Next",Arial,sans-serif;--f-m:"Atkinson Mono",Menlo,monospace}
+@page{size:letter;margin:0}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;color:var(--text);font:400 8.6pt/1.45 var(--f-b)}
+p{margin:0}
+.page{position:relative;width:8.5in;height:11in;padding:0 .7in .55in;overflow:hidden;break-after:page}
+.page:last-child{break-after:auto}
+.band{margin:0 -.7in;padding:.3in .7in .26in;background:var(--forest);color:#EEF5F0;position:relative;overflow:hidden}
+.band::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--gold);transform:skewY(-.6deg);transform-origin:left}
+.band__top{display:flex;justify-content:space-between;align-items:flex-start}
+.wm{font:800 17pt/1 var(--f-d);letter-spacing:.02em}.wm i{font-style:normal;color:var(--gold);margin:0 3pt}
+.sub{margin-top:4pt;font:600 6.4pt/1 var(--f-b);letter-spacing:.16em;text-transform:uppercase;color:#B9C6BE}
+.kind{text-align:right;font:700 8pt/1.5 var(--f-d);letter-spacing:.14em;text-transform:uppercase}.kind b{color:var(--gold);font-weight:700}
+h1{margin:.16in 0 0;font:800 36pt/.9 var(--f-d);letter-spacing:.005em;text-transform:uppercase}h1 em{font-style:normal;color:var(--gold)}
+.meta{display:grid;grid-template-columns:repeat(3,1fr);margin-top:.14in;border-top:1.4pt solid var(--ink);border-bottom:.6pt solid var(--line)}
+.meta>div{padding:6pt 10pt 7pt 0}.meta>div+div{padding-left:10pt;border-left:.6pt solid var(--line)}
+.lbl{font:400 6.4pt/1 var(--f-m);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.meta b{display:block;margin-top:4pt;font:700 11pt/1.1 var(--f-d)}.meta span{font-size:7.6pt;color:var(--muted)}
+.intro{margin-top:9pt;font-size:9pt}
+.basis{margin-top:8pt;padding:6pt 9pt;border:.6pt dashed var(--line);border-radius:6pt;font-size:7.2pt;color:var(--muted);line-height:1.5}
+.mk{display:inline-block;min-width:10pt;padding:0 2pt;margin-left:3pt;border:.7pt solid currentColor;border-radius:2.5pt;font:700 6pt/9pt var(--f-m);text-align:center;color:var(--ink);vertical-align:1pt}
+.eyebrow{margin-top:9pt;font:600 6.6pt/1 var(--f-b);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h2{margin:3pt 0 5pt;font:800 17pt/1 var(--f-d);color:var(--ink)}
+h3{margin:0 0 3pt;font:700 11pt/1.1 var(--f-d);color:var(--ink);display:flex;align-items:center;gap:5pt}
+h3 i{width:6pt;height:6pt;border-radius:1.5pt;display:inline-block}
+table{width:100%;border-collapse:collapse}
+th{font:400 6.4pt/1 var(--f-m);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:0 0 4pt;border-bottom:1.2pt solid var(--ink)}
+td{padding:4pt 0;border-bottom:.6pt solid var(--line);vertical-align:top}
+.n,th.n{text-align:right;font-family:var(--f-m);white-space:nowrap}
+.bal td{font-size:9pt;padding:4pt 0}.bal td:first-child{font:700 10pt/1.2 var(--f-d)}.bal td.n:last-child{font-weight:700}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:.3in}
+.mo .grp{font:400 6.2pt/1 var(--f-m);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:5pt 0 3pt;border-bottom:.6pt solid var(--line)}
+.mo .item{display:flex;justify-content:space-between;gap:8pt;padding:2.4pt 0;border-bottom:.6pt solid var(--line)}
+.mo .item small{display:block;font-size:6.8pt;color:var(--muted);line-height:1.35}
+.mo .sp{padding-left:9pt;font-size:7.8pt}
+.mo .tot{font-weight:700;border-bottom:1.2pt solid var(--ink)}
+.note{margin-top:6pt;font-size:7.4pt;color:var(--muted)}
+.foot{position:absolute;left:.7in;right:.7in;bottom:.3in;display:flex;justify-content:space-between;padding-top:5pt;border-top:.6pt solid var(--line);font:400 6.6pt/1 var(--f-m);color:var(--muted);letter-spacing:.04em}
+.bars .row{display:grid;grid-template-columns:2.55in 1fr 1.05in;gap:8pt;align-items:center;padding:4pt 0;border-bottom:.6pt solid var(--line)}
+.bars b{display:block;font-size:8.6pt}.bars small{display:block;font-size:6.8pt;color:var(--muted);line-height:1.35}
+.bar{height:9pt;border-radius:0 3pt 3pt 0}
+.bars .n{font-size:9.4pt}
+.legend{display:flex;gap:12pt;font-size:7pt;color:var(--muted);justify-content:flex-end;margin-top:-16pt;margin-bottom:6pt}
+.legend span::before{content:"";display:inline-block;width:7pt;height:7pt;border-radius:1.5pt;margin-right:4pt;vertical-align:-.5pt;background:var(--c)}
+.two td small{display:block;font-size:6.8pt;color:var(--muted)}
+.notes{margin-top:.2in;padding:10pt 14pt 11pt;border-left:3pt solid var(--gold);background:var(--surface);border-radius:0 8pt 8pt 0}
+.notes ol{margin:4pt 0 0;padding-left:14pt}.notes li{margin-top:4pt;font-size:8pt}.notes li b{font-weight:700}
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="band">
+    <div class="band__top">
+      <div><p class="wm">McROBERTS<i>/</i>PAC</p><p class="sub">Hugh McRoberts Secondary · Richmond, BC</p></div>
+      <p class="kind"><b>2025–26 financial report</b><br>Summary · October 2026</p>
+    </div>
+    <h1>The year <em>in brief.</em></h1>
+  </header>
+  <div class="meta" id="meta"></div>
+  <p class="intro" id="intro"></p>
+  <p class="basis" id="basis"></p>
+
+  <p class="eyebrow">The two accounts</p>
+  <h2>Opening and closing balances</h2>
+  <table class="bal"><thead><tr><th>Account</th><th class="n">Aug 31, 2025</th><th class="n">Money in</th><th class="n">Money out</th><th class="n">Aug 31, 2026</th></tr></thead><tbody id="bal"></tbody></table>
+
+  <p class="eyebrow">Money in and out</p>
+  <h2>By main category</h2>
+  <div class="cols">
+    <div class="mo" id="gaming"></div>
+    <div class="mo" id="operating"></div>
+  </div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Summary</span><span>1 / 2</span></div>
+</section>
+
+<section class="page">
+  <div style="height:.45in"></div>
+  <p class="eyebrow">Where the money went</p>
+  <h2>The largest spending items</h2>
+  <p class="legend"><span style="--c:var(--gaming)">Gaming account</span><span style="--c:var(--dag)">Gaming account: Dry After Grad</span><span style="--c:var(--operating)">Family fund</span></p>
+  <div class="bars" id="bars"></div>
+
+  <div class="cols" style="margin-top:.22in">
+    <div><h2>The 2025–26 wish list</h2><table class="two"><tbody id="wish"></tbody></table></div>
+    <div><h2>Grants received</h2><table class="two"><thead><tr><th>Grant</th><th class="n">Amount</th></tr></thead><tbody id="grants"></tbody></table>
+      <p class="note">The Province gives $20 for each student, for activities outside regular classes. It cannot pay for scholarships or staff thank-yous. No other grant came into either account in 2025–26.</p></div>
+  </div>
+
+  <div class="notes"><p class="eyebrow" style="margin:0">Notes</p><h2 style="margin-bottom:0">About this report</h2><ol id="notes"></ol></div>
+  <div class="foot"><span>Figures checked against the bank record, read October 9, 2026 · not audited</span><span>2 / 2</span></div>
+</section>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  const R = window.REPORT, $ = id => document.getElementById(id);
+  const money = (v, sign) => (sign && v > 0 ? "+" : "") + (v < 0 ? "−" : "") + "$" + Math.abs(v).toLocaleString("en-CA", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const r2 = n => Math.round(n * 100) / 100;
+  const mark = s => { const m = (R.meta.statuses.find(x => x.key === s) || {}).mark; return m ? `<span class="mk">${m}</span>` : ""; };
+  const G = R.accounts.gaming, O = R.accounts.operating, P = R.meta.preparedBy, Rv = R.meta.reviewer;
+  const who = p => p.name ? `${p.name}<span>${p.role}</span>` : p.role;
+  const split = k => G.wishCheque.split.find(x => x.key === k);
+
+  $("meta").innerHTML =
+    `<div><p class="lbl">Prepared by</p><b>${who(P)}</b></div>` +
+    `<div><p class="lbl">Reviewed by</p><b>${who(Rv)}</b><span>${Rv.reviewed}</span></div>` +
+    `<div><p class="lbl">Period</p><b>Sept 1, 2025 – Aug 31, 2026</b><span>The 2025–26 school year</span></div>`;
+  $("intro").innerHTML = `Money in and out of the PAC's two bank accounts, checked transaction by transaction against the PAC's online banking (read <b>${R.meta.coverage.bankRead}</b>) and reviewed by the Treasurer on <b>${Rv.reviewed}</b>.`;
+  $("basis").innerHTML = `${R.meta.basis}. The Treasurer reports that no cheque was outstanding on August 31, 2026${mark("reported")}. The Dry After Grad committee keeps its own account, which is not part of this report.<br>No mark: matches the bank record · ${mark("reported")} reported (a meeting, PAC records or a treasurer) · ${mark("derived")} worked out from other figures`;
+
+  const gIn = r2(G.grant.value + G.interest.value), gOut = r2(G.carriedCheque.value + G.wishCheque.value);
+  const oOut = r2(O.spent.reduce((a, s) => a + s.value, 0));
+  const balRow = (name, c, a) => `<tr><td><span style="display:inline-block;width:7pt;height:7pt;border-radius:1.5pt;background:${c};margin-right:6pt"></span>${name}</td><td class="n">${money(a[0])}</td><td class="n">${money(a[1], true)}</td><td class="n">${money(-a[2])}</td><td class="n">${money(a[3])}</td></tr>`;
+  $("bal").innerHTML = balRow("Gaming account", "var(--gaming)", [G.opening.value, gIn, gOut, G.closing.value]) +
+                       balRow("Family fund (operating account)", "var(--operating)", [O.opening.value, O.moneyIn.value, oOut, O.closing.value]);
+
+  const item = (label, sub, v, cls, st) => `<div class="item ${cls || ""}"><div>${label}${sub ? `<small>${sub}</small>` : ""}</div><div class="n">${money(v, true)}${st ? mark(st) : ""}</div></div>`;
+  const AF = R.afterYear;
+  $("gaming").innerHTML = `<h3><i style="background:var(--gaming)"></i>Gaming account</h3>` +
+    `<p class="grp">Money in</p>` +
+    item("BC Community Gaming Grant", `$${R.rates.gamingPerStudent} for each student · ${G.grant.dateLabel}`, G.grant.value) +
+    item("Bank interest", "Monthly, September 2025 to August 2026", G.interest.value) +
+    item("Total money in", "", gIn, "tot") +
+    `<p class="grp">Money out</p>` +
+    item("2024–25 wish list", `Cheque ${G.carriedCheque.number} to the school · cashed ${G.carriedCheque.clearedLabel}`, -G.carriedCheque.value) +
+    item("2025–26 wish list and Dry After Grad bus", `Cheque ${G.wishCheque.number} to the school · cashed ${G.wishCheque.clearedLabel}`, -G.wishCheque.value) +
+    `<div class="item sp"><div>for the 2025–26 wish list</div><div class="n">${money(split("wish").value)}${mark(split("wish").status)}</div></div>` +
+    `<div class="item sp"><div>for the Dry After Grad bus</div><div class="n">${money(split("dag").value)}${mark(split("dag").status)}</div></div>` +
+    item("Total money out", "", -gOut, "tot") +
+    `<p class="note">After the year: the 2026–27 grant of ${money(AF.grant)} arrived on ${AF.grantDate}, and the balance on ${AF.balanceDate} was ${money(AF.balance)}.</p>`;
+
+  $("operating").innerHTML = `<h3><i style="background:var(--operating)"></i>Family fund</h3>` +
+    `<p class="grp">Money in</p>` +
+    O.raised.map(x => item(x.name, x.when, x.value)).join("") +
+    item("Other deposits", O.otherIn.label.replace(/^from /, "From "), O.otherIn.value) +
+    item("Total money in", "", O.moneyIn.value, "tot") +
+    `<p class="grp">Money out</p>` +
+    O.spent.map(x => item(x.name, x.detail.split(" · ")[0], -x.value)).join("") +
+    item("Total money out", "", -oOut, "tot");
+
+  const S = R.scholarships, rawSam = O.raised[0], rawBub = O.raised[2];
+  const bars = [
+    ["2025–26 wish list", `${R.wishlist.requests} requests from ${R.wishlist.groups} school groups · in cheque ${G.wishCheque.number}`, split("wish").value, "var(--gaming)", split("wish").status],
+    ["2024–25 wish list", `Last year's list · cheque ${G.carriedCheque.number}, cashed September 2025`, G.carriedCheque.value, "var(--gaming)", ""],
+    ["Dry After Grad bus", `About $${R.rates.dagPerGrad} for each of ${R.dag.grads} graduates · in cheque ${G.wishCheque.number}`, split("dag").value, "var(--dag)", split("dag").status],
+    ["Grade 12 scholarships", `${S.awards.value} awards of $${S.awards.each}, ${money(S.total.value)} in all with a parent's ${money(S.parentGift.value)} paid to the school directly`, S.fromFund.value, "var(--operating)", ""],
+    ["Staff thank-you breakfast", `June 24 · families gave ${money(O.raised[3].value)}, the fund the other ${money(r2(O.spent[1].value - O.raised[3].value))}`, O.spent[1].value, "var(--operating)", ""],
+    ["Samosa cost", `The sale brought in ${money(rawSam.value)} · ${money(r2(rawSam.value - O.spent[2].value))} after costs`, O.spent[2].value, "var(--operating)", ""],
+    ["Bubble tea cost", `The sale brought in ${money(rawBub.value)} · ${money(r2(rawBub.value - O.spent[3].value))} after costs`, O.spent[3].value, "var(--operating)", ""]
+  ];
+  const max = Math.max(...bars.map(b => b[2]));
+  $("bars").innerHTML = bars.map(b => `<div class="row"><div><b>${b[0]}</b><small>${b[1]}</small></div><div><div class="bar" style="width:${Math.max(1.2, 100 * b[2] / max)}%;background:${b[3]}"></div></div><div class="n">${money(b[2])}${b[4] ? mark(b[4]) : ""}</div></div>`).join("");
+
+  const W = R.wishlist, over = r2(split("wish").value - W.approved.value);
+  const wrow = (label, sub, v, st) => `<tr><td>${label}<small>${sub}</small></td><td class="n">${money(v)}${mark(st)}</td></tr>`;
+  $("wish").innerHTML =
+    wrow("Asked for", `${W.requests} requests from ${W.groups} school groups, as sent in`, W.requested.value, W.requested.status) +
+    wrow("Approved on November 12, 2025", `The requests less the ${money(r2(W.requested.value - W.approved.value))} asked for the bus; the minutes record the motion, not the vote`, W.approved.value, W.approved.status) +
+    wrow("Paid in August 2026", `Cheque ${G.wishCheque.number}, ${money(G.wishCheque.value)}, less ${money(split("dag").value)} for the bus`, split("wish").value, split("wish").status) +
+    wrow("Paid above the approved amount", "The item-by-item list is on paper with the Treasurer", over, "derived");
+  $("grants").innerHTML =
+    `<tr><td>Gaming grant, 2025–26<small>BC Community Gaming Grant · ${G.grant.dateLabel}</small></td><td class="n">${money(G.grant.value)}</td></tr>` +
+    `<tr><td>Gaming grant, 2026–27<small>${AF.grantDate}, after the report's period</small></td><td class="n">${money(AF.grant)}</td></tr>`;
+
+  $("notes").innerHTML = R.notes.map(n => { const i = n.indexOf(". "); return `<li><b>${n.slice(0, i + 1)}</b>${n.slice(i + 1)}</li>`; }).join("");
+  document.documentElement.dataset.ready = "1";
+})();
+</script>
+</body>
+</html>

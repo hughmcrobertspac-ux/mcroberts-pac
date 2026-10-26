@@ -19,6 +19,7 @@ DOCS = {
     "minutes-2026-09-16": ROOT / "src/meetings/minutes/2026-09-16-pac-meeting-minutes.pdf",
     "minutes-2026-10-14": ROOT / "src/meetings/minutes/2026-10-14-pac-meeting-minutes.pdf",
     "letterhead": HERE / "out/mcroberts-pac-letterhead.pdf",
+    "minutes-template": HERE / "out/mcroberts-pac-minutes-template.pdf",
 }
 CHROMES = [
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",

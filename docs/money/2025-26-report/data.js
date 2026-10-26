@@ -289,6 +289,9 @@ const R = {
     ]
   },
 
+  // After the year this report covers: the next grant and the balance on the day the bank record was read.
+  afterYear: { grant: GRANT_NEXT, grantDate: "October 1, 2026", balance: GAMING_OCT9, balanceDate: "October 9, 2026" },
+
   // About this report: the notes of the summary the Treasurer reviewed on October 18, 2026.
   notes: [
     `Records on paper. The item-by-item 2025–26 wish list and the two grant letters (${usd(GRANT, 2)} and ${usd(GRANT_NEXT, 2)}) are kept as paper copies by the Treasurer, with the PAC's other records, for a Ministry audit.`,

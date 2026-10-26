@@ -52,6 +52,8 @@ The 2025–26 report is in `src/money/2025-26-report/`. Its figures, each with a
    ```
 4. Run `python3 build.py` again, so `docs/` carries the new PDF, then commit and push.
 
+The two-page summary that the Money page links as the report is `summary.html`, read from the same `data.js`. Print it the same way, from `docs/money/2025-26-report/summary.html` to `src/money/2025-26-report/2025-26-financial-summary.pdf`, and check it stays on 2 pages.
+
 The Treasurer reviewed the report on October 18, 2026; it keeps its review strip, notes and source chips until the PAC executive approves it too. For that version, set `meta.mode` to `"public"` in `data.js`: it hides the draft strip, the list of documents still awaited and the source chips on the page, but `data.js` still ships them and `print.html` always prints the draft edition, so check the page, the PDF text and `data.js` before calling it public. The e-Transfer address (`appeal.howToGive`) stays unconfirmed until the Treasurer confirms it takes donations: while its status is `pending`, the page and the PDF show a "coming soon" line instead of the address.
 
 ## Accounts

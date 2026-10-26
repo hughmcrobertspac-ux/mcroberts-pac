@@ -5,7 +5,7 @@ The PAC's letterhead in the site's own look: forest and ink, field green for lab
 - `letterhead.css`: page geometry (Letter), the first-page masthead, the running head and folio from page two, and the minutes layout.
 - `masthead.html`: the masthead every document shares. Each document has `{{masthead}}` where it goes.
 - `minutes-YYYY-MM-DD.html`: the minutes of one meeting, word for word as the Secretary issued them. The PDF goes to `src/meetings/minutes/` and the Meetings page links it.
-- `letterhead.html`: the blank letterhead.
+- `letterhead.html` and `minutes-template.html`: the blank letterhead and the empty minutes layout, as PDFs in `out/`.
 
 Print every PDF with `python3 tools/letterhead/make.py` (or one: `make.py minutes-2026-10-14`), then run `python3 build.py` so `docs/` carries them.
 
