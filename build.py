@@ -204,7 +204,7 @@ def block_meetings_table(root):
         if m["status"] == "held":
             # A held meeting links its minutes once they are on the site; until then it just says Held.
             status = "" if m.get("minutes") else '<span class="pill pill--done">Held</span>'
-            cal = (f'<a class="link-cal" href="{root}{m["minutes"]}" download>Minutes (PDF)<span class="vh">: {label}</span></a>'
+            cal = (f'<a class="link-cal" href="{root}{m["minutes"]}" target="_blank" rel="noopener">Minutes (PDF)<span class="vh">: {label} (opens in a new tab)</span></a>'
                    if m.get("minutes") else "")
         else:
             status = "" if m["status"] == "confirmed" else tbc("", "Date to be confirmed by the PAC executive").replace('<span class="tbc">', '<span class="tbc tbc--solo">')
