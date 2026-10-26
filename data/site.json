@@ -1,6 +1,6 @@
 {
   "preview": true,
-  "lastUpdated": "2026-10-12",
+  "lastUpdated": "2026-10-26",
   "siteName": "McRoberts PAC",
   "orgName": "Hugh McRoberts Secondary Parent Advisory Council",
   "pacEmail": "hughmcrobertspac@gmail.com",
@@ -33,7 +33,7 @@
 
   "meetings": [
     { "id": "2026-27-m1", "date": "2026-09-16", "status": "held", "note": "First meeting of the year and executive elections" },
-    { "id": "2026-27-m2", "date": "2026-10-14", "status": "confirmed" },
+    { "id": "2026-27-m2", "date": "2026-10-14", "status": "held" },
     { "id": "2026-27-m3", "date": "2026-11-18", "status": "tbc", "note": "Third Wednesday, because November 11 is Remembrance Day" },
     { "id": "2026-27-m4", "date": "2027-01-13", "status": "tbc" },
     { "id": "2026-27-m5", "date": "2027-02-10", "status": "tbc" },
