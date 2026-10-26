@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mcroberts.richmond-dpac.ca/sitemap.xml
+Sitemap: https://hughmcrobertspac-ux.github.io/mcroberts-pac/sitemap.xml

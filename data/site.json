@@ -4,8 +4,8 @@
   "siteName": "McRoberts PAC",
   "orgName": "Hugh McRoberts Secondary Parent Advisory Council",
   "pacEmail": "hughmcrobertspac@gmail.com",
-  "baseUrl": "https://mcroberts.richmond-dpac.ca/",
-  "domain": "mcroberts.richmond-dpac.ca",
+  "baseUrl": "https://hughmcrobertspac-ux.github.io/mcroberts-pac/",
+  "domain": "",
   "emailList": {
     "subscribe": "hughmcrobertsparents+subscribe@googlegroups.com",
     "unsubscribe": "hughmcrobertsparents+unsubscribe@googlegroups.com"
