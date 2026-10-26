@@ -5,7 +5,7 @@
            "reported"  = reported at a PAC meeting, in the PAC's records or by a treasurer; not a separate line on the bank record
            "derived"   = worked out from confirmed or reported figures
            "pending"   = not yet known; waiting on documents
-   mode:   "draft" shows the draft strip, the documents still awaited and the source chips;
+   mode:   "draft" shows the review strip, the notes about this report and the source chips;
            "public" hides them in index.html (data.js still ships them).
    This file is public. People are named only after they agree (preparedBy and reviewer take an
    optional name), and review notes and questions for the treasurers stay in the private
@@ -20,7 +20,7 @@ const GRANT = 20700, WISH_APPROVED = 19428.36, WISH_PAID = 22929, DAG_SUPPORT = 
 const GRANT_NEXT = 20780;     // Bank record, gaming account: deposit on Oct 1, 2026
 const GAMING_OCT9 = 23651.18; // Bank record, gaming account: balance on Oct 9, 2026
 const DAG_SOURCE = "Promised at the Apr 8, 2026 meeting (treasurer report in the minutes); paid inside cheque 0099 to the school, whose memo names the Dry After Grad bus; confirmed by the Treasurer and the Co-Treasurer in October 2026";
-const GRANT_SOURCE = "Bank record, gaming account: deposit on Oct 3, 2025; also on the PAC's gaming account summary report for the year ending Jan 31, 2026; grant letter not yet seen";
+const GRANT_SOURCE = "Bank record, gaming account: deposit on Oct 3, 2025; also on the PAC's gaming account summary report for the year ending Jan 31, 2026; the grant letter is kept on paper by the Treasurer";
 // What three family-fund cheques paid for: reported by the Treasurer in October 2026 (the cheques themselves are on the bank record).
 const PURPOSE_SOURCE = "what it paid for reported by the Treasurer in October 2026";
 const WJ = "\u2060"; // word joiner: keeps "2026–27" on one line
@@ -59,8 +59,8 @@ const R = {
     ],
     basis: "Not audited · Money is counted when it entered or left the bank · Canadian dollars",
     preparedBy: { role: "2026–27 Co-Treasurer" },
-    reviewer: { role: "Treasurer" },
-    edition: "Draft for review · October 2026"
+    reviewer: { role: "Treasurer", reviewed: "October 18, 2026" },
+    edition: "Reviewed by the Treasurer on October 18, 2026"
   },
 
   headline: [
@@ -137,7 +137,7 @@ const R = {
           { key: "dag", label: "Dry After Grad bus, paid in August", value: null, status: "reported" },
           { key: "left", label: "Left on August 31, 2026", value: null, status: "confirmed" }
         ],
-        note: "The school buys the items and the PAC pays the school back with one cheque near the end of the school year. The August cheque paid for the 2025–26 wish list and the Dry After Grad bus; the school's request to be paid back will show the amount for each wish-list item.",
+        note: "The school buys the items and the PAC pays the school back with one cheque near the end of the school year. The August cheque paid for the 2025–26 wish list and the Dry After Grad bus; the item-by-item list is kept on paper by the Treasurer.",
         cashed: `After the year this report covers, the 2026${WJ}–${WJ}27 grant of ${usd(GRANT_NEXT, 2)} arrived on October 1, 2026; the balance on October 9, 2026 was ${usd(GAMING_OCT9, 2)}.`
       }
     },
@@ -209,10 +209,10 @@ const R = {
 
   wishlist: {
     approved: { value: WISH_APPROVED, date: "2025-11-12", status: "reported", source: "Motion at the Nov 12, 2025 meeting; the minutes record the motion but not the vote" },
-    requested: { value: 21428.36, status: "reported", source: "Wish list 2025–26 first-round requests as sent in (the sum of its rows); the final list is still to come" },
+    requested: { value: 21428.36, status: "reported", source: "Wish list 2025–26 first-round requests as sent in (the sum of its rows); the item-by-item final list is kept on paper by the Treasurer" },
     requests: 16,
     groups: 10,
-    note: "These are the requests as sent in. The school's request to be paid back will show the amount paid for each item.",
+    note: "These are the requests as sent in. The item-by-item list of what was paid is kept on paper by the Treasurer.",
     departments: [
       { name: "Athletics & PE", requested: 6548.36, items: [`Dance instructors for about 600 Grade 8${WJ}–${WJ}10 students`, "Volleyball carts", "Senior volleyball uniforms", "Floor hockey goalie pads", "Guest speakers on healthy relationships"] },
       { name: "Grade 8", requested: 4000.00, items: ["Grade 8 activity days for 200+ students"] },
@@ -289,12 +289,13 @@ const R = {
     ]
   },
 
-  pendingDocs: [
-    `The final wish list with the amount paid for each item: the school's request to be paid back for the ${usd(WISH_PART, 2)} wish-list part of the August cheque`,
-    "Receipts for the three family-fund cheques that paid sale and breakfast costs (December 2025 samosas, April 2026 bubble tea, July 2026 staff breakfast)",
-    `The grant letter for the ${usd(GRANT, 2)} gaming grant`,
-    "The recorded result of the November 12 wish-list motion",
-    "Confirmation of the donation address and whether the PAC can give tax receipts"
+  // After the year this report covers: the next grant and the balance on the day the bank record was read.
+  afterYear: { grant: GRANT_NEXT, grantDate: "October 1, 2026", balance: GAMING_OCT9, balanceDate: "October 9, 2026" },
+
+  // About this report: the notes of the summary the Treasurer reviewed on October 18, 2026.
+  notes: [
+    `Records on paper. The item-by-item 2025–26 wish list and the two grant letters (${usd(GRANT, 2)} and ${usd(GRANT_NEXT, 2)}) are kept as paper copies by the Treasurer, with the PAC's other records, for a Ministry audit.`,
+    "Basis. The school year, September 1, 2025 to August 31, 2026; money counted when it entered or left the bank; not audited. The Treasurer reports that no cheque was outstanding on August 31, 2026."
   ]
 };
 

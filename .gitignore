@@ -2,3 +2,4 @@
 __pycache__/
 .docs-build/
 .docs-old/
+tools/letterhead/out/

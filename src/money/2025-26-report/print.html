@@ -226,7 +226,7 @@ h3{font-size:13pt;font-weight:800;line-height:1.1}
   </div>
   <div><p class="eyebrow" style="margin-bottom:6px">The school year</p><div class="season" id="season"></div></div>
   <p class="coverage" id="coverage"></p>
-  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>2</span></div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report</span><span>2</span></div>
 </section>
 
 <!-- 3 how it works + history -->
@@ -240,7 +240,7 @@ h3{font-size:13pt;font-weight:800;line-height:1.1}
     <div id="histChart"></div>
     <p style="margin-top:4px;font-size:8pt;line-height:1.4;color:var(--text-muted)" id="histNote"></p>
   </div>
-  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>3</span></div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report</span><span>3</span></div>
 </section>
 
 <!-- 4 gaming -->
@@ -261,7 +261,7 @@ h3{font-size:13pt;font-weight:800;line-height:1.1}
       <p style="font-size:8.5pt;color:var(--text-2);margin-top:10px" id="commitNote"></p>
     </div>
   </div>
-  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>4</span></div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report</span><span>4</span></div>
 </section>
 
 <!-- 5 wish list + dag -->
@@ -271,7 +271,7 @@ h3{font-size:13pt;font-weight:800;line-height:1.1}
   <div class="panel"><div class="chart-head"><h3>Asked for, by school group</h3></div><div id="wishChart"></div></div>
   <div class="depts" id="depts"></div>
   <div class="dag" id="dag"></div>
-  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>5</span></div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report</span><span>5</span></div>
 </section>
 
 <!-- 6 family fund + stewardship -->
@@ -287,7 +287,7 @@ h3{font-size:13pt;font-weight:800;line-height:1.1}
     <ul class="ctrl" id="ctrl"></ul>
     <div class="nexty" id="nexty"></div>
   </div>
-  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>6</span></div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report</span><span>6</span></div>
 </section>
 
 <!-- 7 appeal -->
@@ -302,7 +302,7 @@ h3{font-size:13pt;font-weight:800;line-height:1.1}
     <div><span class="lbl">How to give</span><br><code id="etr"></code><p id="how"></p></div>
     <div><span class="lbl">Other ways to help</span><ul id="other"></ul></div>
   </div>
-  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report · Draft</span><span>7</span></div>
+  <div class="foot"><span>McRoberts PAC · 2025–26 Financial Report</span><span>7</span></div>
 </section>
 
 <script src="data.js"></script>
@@ -320,9 +320,9 @@ h3{font-size:13pt;font-weight:800;line-height:1.1}
   const who = p => p.name ? `${p.name}, ${p.role}` : `the ${p.role}`;
   const sign = (p, label) => p.name ? `<div><b>${p.name}</b><span>${label} · ${p.role}</span></div>` : `<div><b>${p.role}</b><span>${label}</span></div>`;
   $('coverSub').textContent = `The Parent Advisory Council (PAC) financial report for the ${R.meta.period.replace('School year', 'school year')}.`;
-  $('coverWho').innerHTML = `<b>Draft prepared by</b>${P0.name ? who(P0) : P0.role}<br>For review by ${who(Rv)}`;
+  $('coverWho').innerHTML = `<b>Prepared by</b>${P0.name ? who(P0) : P0.role}`;
   $('coverEdition').innerHTML = `<b>${R.meta.edition}</b>${R.meta.basis}`;
-  $('sig').innerHTML = sign(P0, 'Draft prepared by') + sign(Rv, 'For review');
+  $('sig').innerHTML = sign(P0, 'Prepared by') + sign(Rv, `Reviewed ${Rv.reviewed}`);
   const kc = { money:'var(--gaming)', fundraiser:'var(--operating)', decision:'var(--text)', event:'var(--dag)', meeting:'var(--text-2)' };
   $('season').innerHTML = R.timeline.map(t => `<div style="--c:${kc[t.kind]}"><span class="w">${t.when}</span><b>${t.label}</b><span>${t.detail}</span></div>`).join('');
   const keyItem = s => s.key === 'pending' ? `<span><span class="pend">${s.label}</span> ${s.description}</span>` : s.mark ? `<span>${mk(s.key).replace('class="', 'style="margin-left:0" class="')} ${s.description}</span>` : `<span>No mark: ${s.description.charAt(0).toLowerCase() + s.description.slice(1)}</span>`;
@@ -390,7 +390,7 @@ h3{font-size:13pt;font-weight:800;line-height:1.1}
     $('how').innerHTML = `Send an ${P.howToGive.method} to this address. In the message, write "${P.howToGive.message}". Every dollar goes to the family fund.`;
   }
   $('other').innerHTML = P.otherWays.map(o => `<li>${o}</li>`).join('');
-  document.querySelectorAll('.foot span:first-child').forEach(n => n.textContent = 'McRoberts PAC · 2025–26 Financial Report · Draft for review');
+  document.querySelectorAll('.foot span:first-child').forEach(n => n.textContent = 'McRoberts PAC · 2025–26 Financial Report · Reviewed by the Treasurer');
   document.documentElement.dataset.ready = '1';
 })();
 </script>
