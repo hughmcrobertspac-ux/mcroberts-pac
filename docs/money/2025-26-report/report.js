@@ -19,8 +19,9 @@
     let saved = false; try{ saved = localStorage.getItem('pac-review') === '1' }catch(e){}
     setReview(saved || location.hash === '#review');
     btn.addEventListener('click', () => setReview(btn.getAttribute('aria-pressed') !== 'true'));
-    $('pendCount').textContent = `${R.meta.coverage.short} ${R.pendingDocs.length} items still need documents.`;
-    $('reviewItems').innerHTML = R.pendingDocs.map(p => `<li>${esc(p)}</li>`).join('');
+    $('stripTitle').textContent = `${R.meta.edition}.`;
+    $('pendCount').textContent = `${R.meta.coverage.short} Not audited.`;
+    $('reviewItems').innerHTML = R.notes.map(p => `<li>${esc(p)}</li>`).join('');
   } else {
     $('top').remove(); $('reviewList').remove();
   }
@@ -33,7 +34,7 @@
   // letter signature
   const P = R.meta.preparedBy, Rv = R.meta.reviewer;
   $('signers').innerHTML = DRAFT
-    ? sign(P, 'Draft prepared by · ') + sign(Rv, 'For review · ')
+    ? sign(P, 'Prepared by · ') + sign(Rv, `Reviewed ${Rv.reviewed} · `)
     : sign(Rv, 'Prepared by · ') + sign(P, 'Prepared by · ');
 
   // timeline
@@ -138,7 +139,7 @@
   });
 
   // about the figures
-  $('foot').innerHTML = `<p><b>${R.meta.org}</b> · ${R.meta.title}</p><p>${R.meta.basis}. ${R.meta.coverage.long} Sources: the PAC's online banking for the gaming account and the family fund (all transactions, cheque images and e-Transfer records, read ${R.meta.coverage.bankRead}), treasurer reports in the 2025–26 meeting minutes, and the PAC's fundraiser and wish-list records.</p><p>${DRAFT ? `Draft prepared by ${who(P)} from the PAC's bank record and the 2025–26 treasurers' records, for review by ${who(Rv)} and the PAC executive. ${R.meta.edition}.` : `Prepared by ${who(Rv)} and ${who(P)}.`}</p>`;
+  $('foot').innerHTML = `<p><b>${R.meta.org}</b> · ${R.meta.title}</p><p>${R.meta.basis}. ${R.meta.coverage.long} Sources: the PAC's online banking for the gaming account and the family fund (all transactions, cheque images and e-Transfer records, read ${R.meta.coverage.bankRead}), treasurer reports in the 2025–26 meeting minutes, and the PAC's fundraiser and wish-list records.</p><p>${DRAFT ? `Prepared by ${who(P)} from the PAC's bank record and the 2025–26 treasurers' records, and reviewed by ${who(Rv)} on ${Rv.reviewed}. Not audited.` : `Prepared by ${who(Rv)} and ${who(P)}.`}</p>`;
 
   // charts
   const drawAll = () => { drawGaming(); drawCommit(); drawWish(); drawOp(); drawHist(); };

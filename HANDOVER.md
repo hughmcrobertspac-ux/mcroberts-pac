@@ -43,16 +43,16 @@ The 2025–26 report is in `src/money/2025-26-report/`. Its figures, each with a
 2. Run `python3 build.py`, then print the PDF from the built copy, where the print page finds the site's fonts (Letter, no headers or footers):
 
    ```
-   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --no-pdf-header-footer --virtual-time-budget=6000 --print-to-pdf=src/money/2025-26-report/2025-26-financial-report-draft.pdf docs/money/2025-26-report/print.html
+   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --no-pdf-header-footer --virtual-time-budget=6000 --print-to-pdf=src/money/2025-26-report/2025-26-financial-report.pdf docs/money/2025-26-report/print.html
    ```
 3. Read the PDF's text with macOS's own PDFKit and check that the figures and the cover are there and that it has 7 pages:
 
    ```
-   osascript -l JavaScript -e 'ObjC.import("PDFKit"); $.PDFDocument.alloc.initWithURL($.NSURL.fileURLWithPath("src/money/2025-26-report/2025-26-financial-report-draft.pdf")).string.js'
+   osascript -l JavaScript -e 'ObjC.import("PDFKit"); $.PDFDocument.alloc.initWithURL($.NSURL.fileURLWithPath("src/money/2025-26-report/2025-26-financial-report.pdf")).string.js'
    ```
 4. Run `python3 build.py` again, so `docs/` carries the new PDF, then commit and push.
 
-The report stays a draft until the Treasurer and the PAC executive approve it. For that version, set `meta.mode` to `"public"` in `data.js`: it hides the draft strip, the list of documents still awaited and the source chips on the page, but `data.js` still ships them and `print.html` always prints the draft edition, so check the page, the PDF text and `data.js` before calling it public. The e-Transfer address (`appeal.howToGive`) stays unconfirmed until the Treasurer confirms it takes donations: while its status is `pending`, the page and the PDF show a "coming soon" line instead of the address.
+The Treasurer reviewed the report on October 18, 2026; it keeps its review strip, notes and source chips until the PAC executive approves it too. For that version, set `meta.mode` to `"public"` in `data.js`: it hides the draft strip, the list of documents still awaited and the source chips on the page, but `data.js` still ships them and `print.html` always prints the draft edition, so check the page, the PDF text and `data.js` before calling it public. The e-Transfer address (`appeal.howToGive`) stays unconfirmed until the Treasurer confirms it takes donations: while its status is `pending`, the page and the PDF show a "coming soon" line instead of the address.
 
 ## Accounts
 The site should belong to the PAC, not to one volunteer: a GitHub account on the PAC email with two executives able to recover it. The preview is hosted on a volunteer's personal GitHub account; transfer the repository to the PAC account before leaving preview (GitHub: Settings, Transfer ownership) and set up GitHub Pages again there. Any domain name is registered and paid by the PAC, with auto-renew on. Put the domain in `data/site.json` as `"domain"` and change `baseUrl`; `build.py` then writes `docs/CNAME` and every absolute link follows `baseUrl`.
