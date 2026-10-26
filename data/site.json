@@ -33,12 +33,14 @@
       "id": "2026-27-m1",
       "date": "2026-09-16",
       "status": "held",
-      "note": "First meeting of the year and executive elections"
+      "note": "First meeting of the year and executive elections",
+      "minutes": "meetings/minutes/2026-09-16-pac-meeting-minutes.pdf"
     },
     {
       "id": "2026-27-m2",
       "date": "2026-10-14",
-      "status": "held"
+      "status": "held",
+      "minutes": "meetings/minutes/2026-10-14-pac-meeting-minutes.pdf"
     },
     {
       "id": "2026-27-m3",
