@@ -429,7 +429,6 @@ details.acc .acc__body > * + * { margin-top: .75em; }
 
 /* scoreboard: strike behind the numerals only, same lean at every width */
 .scoreboard .strike { display: none; }
-.scoreboard__day::before { content: ""; position: absolute; z-index: -1; left: 50%; top: -12%; bottom: -12%; width: 7px; border-radius: 4px; background: var(--gold); transform: translateX(-50%) rotate(14deg); }
 .scoreboard { box-shadow: none; border-color: rgba(248,177,27,.5); }
 .scoreboard__meta { text-wrap: balance; }
 
@@ -476,7 +475,6 @@ main:not(:lang(zh)) a:lang(zh) { white-space: nowrap; }
 /* tweak 2 */
 .eyebrow { text-wrap: balance; }
 .scoreboard__mon { margin-bottom: 18px; }
-.scoreboard__day::before { top: -22%; bottom: -22%; width: 6px; transform: translateX(-50%) rotate(14deg); }
 @media (max-width: 1000px) and (min-width: 681px) { .board > .tile--wide { grid-column: 1 / -1; } }
 @media (max-width: 420px) {
   .flow { gap: 20px; } .flow__row { gap: 4px; }

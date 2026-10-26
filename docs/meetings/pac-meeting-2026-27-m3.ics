@@ -25,12 +25,11 @@ SEQUENCE:0
 DTSTAMP:20261026T000000Z
 DTSTART;TZID=America/Vancouver:20261118T190000
 DTEND;TZID=America/Vancouver:20261118T200000
-STATUS:TENTATIVE
-SUMMARY:McRoberts PAC meeting (date to be confirmed)
+STATUS:CONFIRMED
+SUMMARY:McRoberts PAC meeting
 LOCATION:School Library\, 8980 Williams Road\, Richmond\, BC
-DESCRIPTION:The PAC executive has not confirmed this date yet. Check the PA
- C website before you come. McRoberts PAC meeting. Everyone is welcome. Ema
- il us for the online link. hughmcrobertspac@gmail.com
+DESCRIPTION:McRoberts PAC meeting. Everyone is welcome. Email us for the on
+ line link. hughmcrobertspac@gmail.com
 URL:https://mcroberts.richmond-dpac.ca/meetings/
 END:VEVENT
 END:VCALENDAR

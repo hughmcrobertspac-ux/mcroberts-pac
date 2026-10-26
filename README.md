@@ -2,9 +2,9 @@
 
 The website of the Parent Advisory Council of Hugh McRoberts Secondary, Richmond, BC.
 
-**Status: preview.** A draft proposal, not yet approved by the PAC executive. Every page carries a preview banner and a `noindex` tag, and facts still to be confirmed show a "TBC" chip.
+**Status: live.** Preview mode is off; pages carry a canonical link and a sitemap, and no preview banner or TBC chips are shown.
 
-- Live site: https://mcroberts.richmond-dpac.ca/ (preview copy: https://rajool.github.io/mcroberts-pac/)
+- Live site: https://hughmcrobertspac-ux.github.io/mcroberts-pac/ (mcroberts.richmond-dpac.ca is being pointed to this GitHub Pages site)
 - Contact: hughmcrobertspac@gmail.com
 
 ## How it works

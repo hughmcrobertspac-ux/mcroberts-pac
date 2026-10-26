@@ -1,5 +1,5 @@
 {
-  "preview": true,
+  "preview": false,
   "lastUpdated": "2026-10-26",
   "siteName": "McRoberts PAC",
   "orgName": "Hugh McRoberts Secondary Parent Advisory Council",
@@ -11,7 +11,6 @@
     "unsubscribe": "hughmcrobertsparents+unsubscribe@googlegroups.com"
   },
   "schoolYear": "2026–27",
-
   "school": {
     "name": "Hugh McRoberts Secondary",
     "officialName": "École Secondaire Hugh McRoberts Secondary School",
@@ -21,7 +20,6 @@
     "url": "https://mcroberts.sd38.bc.ca",
     "principal": "Mr. Jason Leslie"
   },
-
   "meetingDefaults": {
     "start": "19:00",
     "end": "20:00",
@@ -30,72 +28,227 @@
     "online": "Microsoft Teams",
     "onlineNote": "Email us for the online link."
   },
-
   "meetings": [
-    { "id": "2026-27-m1", "date": "2026-09-16", "status": "held", "note": "First meeting of the year and executive elections" },
-    { "id": "2026-27-m2", "date": "2026-10-14", "status": "held" },
-    { "id": "2026-27-m3", "date": "2026-11-18", "status": "tbc", "note": "Third Wednesday, because November 11 is Remembrance Day" },
-    { "id": "2026-27-m4", "date": "2027-01-13", "status": "tbc" },
-    { "id": "2026-27-m5", "date": "2027-02-10", "status": "tbc" },
-    { "id": "2026-27-m6", "date": "2027-04-14", "status": "tbc" },
-    { "id": "2026-27-m7", "date": "2027-05-12", "status": "tbc" }
+    {
+      "id": "2026-27-m1",
+      "date": "2026-09-16",
+      "status": "held",
+      "note": "First meeting of the year and executive elections"
+    },
+    {
+      "id": "2026-27-m2",
+      "date": "2026-10-14",
+      "status": "held"
+    },
+    {
+      "id": "2026-27-m3",
+      "date": "2026-11-18",
+      "status": "confirmed",
+      "note": "Third Wednesday, because November 11 is Remembrance Day"
+    },
+    {
+      "id": "2026-27-m4",
+      "date": "2027-01-13",
+      "status": "confirmed"
+    },
+    {
+      "id": "2026-27-m5",
+      "date": "2027-02-10",
+      "status": "confirmed"
+    },
+    {
+      "id": "2026-27-m6",
+      "date": "2027-04-14",
+      "status": "confirmed"
+    },
+    {
+      "id": "2026-27-m7",
+      "date": "2027-05-12",
+      "status": "confirmed"
+    }
   ],
-
   "executive": [
-    { "role": "Chair", "name": "" },
-    { "role": "Co-Chair", "name": "" },
-    { "role": "Co-Chair", "name": "" },
-    { "role": "Treasurer", "name": "" },
-    { "role": "Co-Treasurer", "name": "" },
-    { "role": "Secretary", "name": "" },
-    { "role": "RDPA Representative", "name": "" },
-    { "role": "Fundraising", "name": "" },
-    { "role": "Dry After Grad Chair", "name": "", "note": "To be confirmed" }
+    {
+      "role": "Chair",
+      "name": ""
+    },
+    {
+      "role": "Co-Chair",
+      "name": ""
+    },
+    {
+      "role": "Co-Chair",
+      "name": ""
+    },
+    {
+      "role": "Treasurer",
+      "name": ""
+    },
+    {
+      "role": "Co-Treasurer",
+      "name": ""
+    },
+    {
+      "role": "Secretary",
+      "name": ""
+    },
+    {
+      "role": "RDPA Representative",
+      "name": ""
+    },
+    {
+      "role": "Fundraising",
+      "name": ""
+    },
+    {
+      "role": "Dry After Grad Chair",
+      "name": "",
+      "note": "To be confirmed"
+    }
   ],
-
   "schoolDates": [
-    { "date": "2026-09-29", "label": "Orange Shirt Day" },
-    { "date": "2026-09-30", "label": "National Day for Truth and Reconciliation", "closed": true },
-    { "date": "2026-10-02", "label": "Clubs Day" },
-    { "date": "2026-10-12", "label": "Thanksgiving", "closed": true },
-    { "date": "2026-10-23", "label": "Pro-D Day", "closed": true },
-    { "date": "2026-11-11", "label": "Remembrance Day", "closed": true },
-    { "date": "2026-11-27", "label": "Pro-D Day", "closed": true },
-    { "date": "2026-12-21", "label": "Winter break starts", "closed": true }
+    {
+      "date": "2026-09-29",
+      "label": "Orange Shirt Day"
+    },
+    {
+      "date": "2026-09-30",
+      "label": "National Day for Truth and Reconciliation",
+      "closed": true
+    },
+    {
+      "date": "2026-10-02",
+      "label": "Clubs Day"
+    },
+    {
+      "date": "2026-10-12",
+      "label": "Thanksgiving",
+      "closed": true
+    },
+    {
+      "date": "2026-10-23",
+      "label": "Pro-D Day",
+      "closed": true
+    },
+    {
+      "date": "2026-11-11",
+      "label": "Remembrance Day",
+      "closed": true
+    },
+    {
+      "date": "2026-11-27",
+      "label": "Pro-D Day",
+      "closed": true
+    },
+    {
+      "date": "2026-12-21",
+      "label": "Winter break starts",
+      "closed": true
+    }
   ],
-
   "lastYear": {
     "label": "2025–26",
     "items": [
-      { "figure": "$19,428.36", "text": "approved for the Teachers' Wish List", "tbc": "Reported in the minutes of the November 12, 2025 meeting. The Treasurer has not confirmed it yet" },
-      { "figure": "$2,040", "text": "for Dry After Grad, about $10 for every graduate" },
-      { "figure": "3", "text": "Grade 12 scholarships of $500" },
-      { "figure": "7", "text": "PAC meetings, open to every parent" }
+      {
+        "figure": "$19,428.36",
+        "text": "approved for the Teachers' Wish List"
+      },
+      {
+        "figure": "$2,040",
+        "text": "for Dry After Grad, about $10 for every graduate"
+      },
+      {
+        "figure": "3",
+        "text": "Grade 12 scholarships of $500"
+      },
+      {
+        "figure": "7",
+        "text": "PAC meetings, open to every parent"
+      }
     ]
   },
-
   "links": {
     "family": [
-      { "label": "McRoberts school website", "url": "https://mcroberts.sd38.bc.ca", "note": "News, forms and school contacts" },
-      { "label": "School calendar", "url": "https://mcroberts.sd38.bc.ca/school-calendar", "note": "Dates, holidays and Pro-D days" },
-      { "id": "newsletter", "label": "Striker Weekly newsletter", "url": "https://mcroberts.sd38.bc.ca/news/newsletters", "note": "The school's weekly note to families. PAC news is shared here too." },
-      { "label": "Bell schedule", "url": "https://mcroberts.sd38.bc.ca/information/bell-schedule", "note": "Class times, PLT and Collaboration Fridays" },
-      { "label": "Student attendance", "url": "https://mcroberts.sd38.bc.ca/parents/student-attendance", "note": "How to report an absence" },
-      { "label": "School Cash Online", "url": "https://richmondsd38.schoolcashonline.com/", "note": "Pay school fees and trips" },
-      { "label": "MyEducation BC parent portal", "url": "https://myeducation.gov.bc.ca/aspen/logon.do", "note": "Report cards and attendance" },
-      { "label": "Help with MyEd", "url": "https://mcroberts.sd38.bc.ca/parents/myed-parent-portal-request-assistance", "note": "Ask the school for a login" },
-      { "label": "Strikers Athletics", "url": "https://mcroberts.sd38.bc.ca/extra-curricular/strikers-athletics", "note": "Teams, consent forms and KidSport" },
-      { "label": "Universal Hot Lunch", "url": "https://mcroberts.sd38.bc.ca/parents/universal-hot-lunch-mcroberts", "note": "The free school lunch program" }
+      {
+        "label": "McRoberts school website",
+        "url": "https://mcroberts.sd38.bc.ca",
+        "note": "News, forms and school contacts"
+      },
+      {
+        "label": "School calendar",
+        "url": "https://mcroberts.sd38.bc.ca/school-calendar",
+        "note": "Dates, holidays and Pro-D days"
+      },
+      {
+        "id": "newsletter",
+        "label": "Striker Weekly newsletter",
+        "url": "https://mcroberts.sd38.bc.ca/news/newsletters",
+        "note": "The school's weekly note to families. PAC news is shared here too."
+      },
+      {
+        "label": "Bell schedule",
+        "url": "https://mcroberts.sd38.bc.ca/information/bell-schedule",
+        "note": "Class times, PLT and Collaboration Fridays"
+      },
+      {
+        "label": "Student attendance",
+        "url": "https://mcroberts.sd38.bc.ca/parents/student-attendance",
+        "note": "How to report an absence"
+      },
+      {
+        "label": "School Cash Online",
+        "url": "https://richmondsd38.schoolcashonline.com/",
+        "note": "Pay school fees and trips"
+      },
+      {
+        "label": "MyEducation BC parent portal",
+        "url": "https://myeducation.gov.bc.ca/aspen/logon.do",
+        "note": "Report cards and attendance"
+      },
+      {
+        "label": "Help with MyEd",
+        "url": "https://mcroberts.sd38.bc.ca/parents/myed-parent-portal-request-assistance",
+        "note": "Ask the school for a login"
+      },
+      {
+        "label": "Strikers Athletics",
+        "url": "https://mcroberts.sd38.bc.ca/extra-curricular/strikers-athletics",
+        "note": "Teams, consent forms and KidSport"
+      },
+      {
+        "label": "Universal Hot Lunch",
+        "url": "https://mcroberts.sd38.bc.ca/parents/universal-hot-lunch-mcroberts",
+        "note": "The free school lunch program"
+      }
     ],
     "district": [
-      { "label": "Richmond School District (SD38)", "url": "https://sd38.bc.ca", "note": "District news, calendar and policies" },
-      { "label": "Richmond District Parents Association (RDPA)", "url": "https://www.richmond-dpac.ca/", "note": "All Richmond PACs working together" },
-      { "label": "BC Confederation of Parent Advisory Councils (BCCPAC)", "url": "https://bccpac.bc.ca/", "note": "The provincial parent organization" },
-      { "label": "Canadian Parents for French BC & Yukon", "url": "https://bc-yk.cpf.ca/", "note": "For French Immersion families" },
-      { "label": "BC gaming grants for PACs", "url": "https://www2.gov.bc.ca/gov/content/sports-culture/gambling-fundraising/gaming-grants/pac-dpac-grants", "note": "The Province's rules for the grant" }
+      {
+        "label": "Richmond School District (SD38)",
+        "url": "https://sd38.bc.ca",
+        "note": "District news, calendar and policies"
+      },
+      {
+        "label": "Richmond District Parents Association (RDPA)",
+        "url": "https://www.richmond-dpac.ca/",
+        "note": "All Richmond PACs working together"
+      },
+      {
+        "label": "BC Confederation of Parent Advisory Councils (BCCPAC)",
+        "url": "https://bccpac.bc.ca/",
+        "note": "The provincial parent organization"
+      },
+      {
+        "label": "Canadian Parents for French BC & Yukon",
+        "url": "https://bc-yk.cpf.ca/",
+        "note": "For French Immersion families"
+      },
+      {
+        "label": "BC gaming grants for PACs",
+        "url": "https://www2.gov.bc.ca/gov/content/sports-culture/gambling-fundraising/gaming-grants/pac-dpac-grants",
+        "note": "The Province's rules for the grant"
+      }
     ]
   },
-
   "schoolPac": {
     "minutes": "https://mcroberts.sd38.bc.ca/parents/parent-advisory-committee-pac/pac-meeting-minutes",
     "agendas": "https://mcroberts.sd38.bc.ca/parents/parent-advisory-committee-pac/pac-meeting-agendas"
