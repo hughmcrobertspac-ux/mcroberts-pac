@@ -174,7 +174,7 @@ def next_meeting_card(m, root, shown):
     <p class="scoreboard__note">Everyone is welcome. You can just listen. {md['onlineNote']}</p>
     <div class="btn-row">
       <a class="btn btn--gold" href="{root}meetings/{meeting_ics_name(m)}">Add to my calendar</a>
-      <a class="btn btn--ghost-light" href="mailto:{SITE['pacEmail']}?subject=Online%20link%20for%20the%20PAC%20meeting">Ask for the online link</a>
+      <a class="btn btn--ghost-light" href="https://teams.microsoft.com/meet/292477062015161?p=lKGHdpQ5uNYJmdqhtJ" rel="noopener">Join online on Microsoft Teams</a>
     </div>
   </div>
 </article>'''
@@ -305,7 +305,7 @@ def ics_event(m):
     start, end = md["start"].replace(":", "") + "00", md["end"].replace(":", "") + "00"
     tentative = m["status"] != "confirmed"
     summary = "McRoberts PAC meeting" + (" (date to be confirmed)" if tentative else "")
-    desc = "McRoberts PAC meeting. Everyone is welcome. " + md["onlineNote"] + " " + SITE["pacEmail"]
+    desc = "McRoberts PAC meeting. Everyone is welcome. " + md["onlineNote"] + " " + md.get("onlineLink", "")
     if tentative:
         desc = "The PAC executive has not confirmed this date yet. Check the PAC website before you come. " + desc
     lines = [

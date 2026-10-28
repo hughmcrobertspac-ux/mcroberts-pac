@@ -1,6 +1,6 @@
 {
   "preview": false,
-  "lastUpdated": "2026-10-26",
+  "lastUpdated": "2026-10-27",
   "siteName": "McRoberts PAC",
   "orgName": "Hugh McRoberts Secondary Parent Advisory Council",
   "pacEmail": "hughmcrobertspac@gmail.com",
@@ -26,7 +26,8 @@
     "place": "School Library",
     "address": "8980 Williams Road, Richmond, BC",
     "online": "Microsoft Teams",
-    "onlineNote": "Email us for the online link."
+    "onlineNote": "Join online on Microsoft Teams.",
+    "onlineLink": "https://teams.microsoft.com/meet/292477062015161?p=lKGHdpQ5uNYJmdqhtJ"
   },
   "meetings": [
     {

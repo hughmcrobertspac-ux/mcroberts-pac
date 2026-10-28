@@ -22,14 +22,15 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:pac-2026-27-m6@mcroberts-pac
 SEQUENCE:0
-DTSTAMP:20261026T000000Z
+DTSTAMP:20261027T000000Z
 DTSTART;TZID=America/Vancouver:20270414T190000
 DTEND;TZID=America/Vancouver:20270414T200000
 STATUS:CONFIRMED
 SUMMARY:McRoberts PAC meeting
 LOCATION:School Library\, 8980 Williams Road\, Richmond\, BC
-DESCRIPTION:McRoberts PAC meeting. Everyone is welcome. Email us for the on
- line link. hughmcrobertspac@gmail.com
+DESCRIPTION:McRoberts PAC meeting. Everyone is welcome. Join online on Micr
+ osoft Teams. https://teams.microsoft.com/meet/292477062015161?p=lKGHdpQ5uN
+ YJmdqhtJ
 URL:https://hughmcrobertspac-ux.github.io/mcroberts-pac/meetings/
 END:VEVENT
 END:VCALENDAR
